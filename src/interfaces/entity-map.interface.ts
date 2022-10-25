@@ -1,3 +1,3 @@
 export interface EntityMap {
-  [key: string]: string | number | string[];
+  [key: string]: undefined | string | number | boolean | string[];
 }
