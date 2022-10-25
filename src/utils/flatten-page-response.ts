@@ -1,4 +1,4 @@
-import { assertsIsRelation, assertsIsShapeProperty } from '../assertions';
+import { assertsIsRelation } from '../assertions';
 import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
@@ -15,21 +15,20 @@ export const flattenPageResponse =
     }
     return flat as unknown as T;
 
-    function dig(entity: unknown, props: (string | number)[]): unknown {
-      assertsIsShapeProperty(entity);
-      if (props.length > 0) {
-        const property = props.shift() as string | number;
+    function dig(entity: any, shapeProperties: (string | number)[]): unknown {
+      if (shapeProperties.length > 0) {
+        const shapeProperty = shapeProperties.shift() as string | number;
         let result: unknown;
-        result = entity[property];
+        result = entity[shapeProperty];
 
         /**
          * workaround for handling files that have been uploaded internally in notion
          */
-        if (property === 'external' && !entity[property]) {
+        if (shapeProperty === 'external' && !entity[shapeProperty]) {
           result = entity['file'];
         }
 
-        if (property === 'relation') {
+        if (shapeProperty === 'relation') {
           assertsIsRelation(result);
           result = result.map(({ id }) => id);
           return result;
@@ -38,7 +37,7 @@ export const flattenPageResponse =
         if (!result) {
           return null;
         }
-        return dig(result, props);
+        return dig(result, shapeProperties);
       } else {
         return entity;
       }
