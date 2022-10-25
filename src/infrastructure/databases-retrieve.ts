@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 import { GetDatabaseParameters } from '@notionhq/client/build/src/api-endpoints';
 
-export const databaseRetrieve = async (query: GetDatabaseParameters) => {
+export const databasesRetrieve = async (query: GetDatabaseParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,
