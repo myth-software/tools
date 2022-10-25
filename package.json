@@ -1,0 +1,19 @@
+{
+  "name": "@myth-software/tools",
+  "version": "0.0.1",
+  "description": "kit for software engineering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myth-software/tools.git"
+  },
+  "author": "Myth Software, LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myth-software/tools/issues"
+  },
+  "homepage": "https://github.com/myth-software/tools#readme"
+}
