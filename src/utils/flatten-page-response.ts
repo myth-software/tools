@@ -1,4 +1,9 @@
-import { assertsIsMultiSelect, assertsIsRelation } from '../assertions';
+import {
+  assertsIsMultiSelect,
+  assertsIsRelation,
+  assertsisShowOriginalRollupFromMultiSelect,
+} from '../assertions';
+import { isShowOriginalRollupFromMultiSelectGuard } from '../guards';
 import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
@@ -38,6 +43,15 @@ export const flattenPageResponse =
           assertsIsMultiSelect(result);
           result = result.map(({ name }) => name);
           return result;
+        }
+
+        if (shapeProperty === 'rollup') {
+          if (!isShowOriginalRollupFromMultiSelectGuard(result)) {
+            return result;
+          }
+          assertsisShowOriginalRollupFromMultiSelect(result);
+
+          return result.array[0].multi_select.map(({ name }) => name);
         }
 
         if (!result) {
