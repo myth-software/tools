@@ -1,4 +1,4 @@
-import { assertsIsRelation } from '../assertions';
+import { assertsIsMultiSelect, assertsIsRelation } from '../assertions';
 import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
@@ -31,6 +31,12 @@ export const flattenPageResponse =
         if (shapeProperty === 'relation') {
           assertsIsRelation(result);
           result = result.map(({ id }) => id);
+          return result;
+        }
+
+        if (shapeProperty === 'multi_select') {
+          assertsIsMultiSelect(result);
+          result = result.map(({ name }) => name);
           return result;
         }
 
