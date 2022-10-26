@@ -9,11 +9,13 @@ export function isShowOriginalRollupFromMultiSelectGuard(value: any) {
     return false;
   }
 
-  if (value.function !== 'show_original' || value.type !== 'array') {
+  const hasCorrectValues =
+    value.function === 'show_original' && value.type === 'array';
+  if (!hasCorrectValues) {
     return false;
   }
 
-  if (value.array[0].type !== 'multi-select') {
+  if (value.array[0].type !== 'multi_select') {
     return false;
   }
 
