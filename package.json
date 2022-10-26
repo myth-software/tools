@@ -1,6 +1,6 @@
 {
   "name": "@myth-software/tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "kit for software engineering",
   "main": "dist/index.js",
   "scripts": {
