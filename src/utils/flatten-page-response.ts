@@ -67,20 +67,21 @@ export const flattenPageResponse =
         };
       }[]
     ) {
-      return files.map((file) => {
+      const urls = files.map((file) => {
         if (file.external) {
           return file.external.url;
         }
 
         return file.file!.url;
       });
+
+      return urls.length === 1 ? urls[0] : urls;
     }
 
     function dig(entity: any, shapeProperties: (string | number)[]): unknown {
       if (shapeProperties.length > 0) {
         const shapeProperty = shapeProperties.shift() as string | number;
-        let result: unknown;
-        result = entity[shapeProperty];
+        const result: unknown = entity[shapeProperty];
 
         if (!result) {
           return null;
