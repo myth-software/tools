@@ -45,6 +45,10 @@ export const flattenPageResponse =
         name: string;
       }[]
     ) {
+      if (multi_select.length === 0) {
+        return null;
+      }
+
       return multi_select.map(({ name }) => name);
     }
 
@@ -53,6 +57,10 @@ export const flattenPageResponse =
         id: string;
       }[]
     ) {
+      if (relation.length === 0) {
+        return null;
+      }
+
       return relation.map(({ id }) => id);
     }
 
@@ -67,6 +75,10 @@ export const flattenPageResponse =
         };
       }[]
     ) {
+      if (files.length === 0) {
+        return null;
+      }
+
       const urls = files.map((file) => {
         if (file.external) {
           return file.external.url;
@@ -75,7 +87,11 @@ export const flattenPageResponse =
         return file.file!.url;
       });
 
-      return urls.length === 1 ? urls[0] : urls;
+      if (urls.length === 1) {
+        return urls[0];
+      }
+
+      return urls;
     }
 
     function dig(entity: any, shapeProperties: (string | number)[]): unknown {
