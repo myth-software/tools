@@ -1,4 +1,8 @@
 export function isMultiSelectGuard(value: unknown) {
+  if (!value) {
+    return false;
+  }
+
   if (!Array.isArray(value)) {
     return false;
   }

@@ -1,15 +1,11 @@
 import {
   assertsIsDate,
+  assertsIsFiles,
   assertsIsMultiSelect,
   assertsIsRelation,
   assertsisShowOriginalRollupFromMultiSelect,
 } from '../assertions';
-import {
-  isDateGuard,
-  isMultiSelectGuard,
-  isRelationGuard,
-  isShowOriginalRollupFromMultiSelectGuard,
-} from '../guards';
+import { isShowOriginalRollupFromMultiSelectGuard } from '../guards';
 import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
@@ -60,31 +56,51 @@ export const flattenPageResponse =
       return relation.map(({ id }) => id);
     }
 
+    function formatFiles(
+      files: {
+        type: 'external' | 'file';
+        external?: {
+          url: string;
+        };
+        file?: {
+          url: string;
+        };
+      }[]
+    ) {
+      return files.map((file) => {
+        if (file.external) {
+          return file.external.url;
+        }
+
+        return file.file!.url;
+      });
+    }
+
     function dig(entity: any, shapeProperties: (string | number)[]): unknown {
       if (shapeProperties.length > 0) {
         const shapeProperty = shapeProperties.shift() as string | number;
         let result: unknown;
         result = entity[shapeProperty];
 
-        /**
-         * workaround for handling files that have been uploaded internally in notion
-         */
-        if (shapeProperty === 'external' && !entity[shapeProperty]) {
-          result = entity['file'];
+        if (shapeProperty === 'files') {
+          assertsIsFiles(result);
+
+          return formatFiles(result);
         }
 
-        if (isRelationGuard(result)) {
+        if (shapeProperty === 'relation') {
           assertsIsRelation(result);
+
           return formatRelation(result);
         }
 
-        if (isMultiSelectGuard(result)) {
+        if (shapeProperty === 'multi_select') {
           assertsIsMultiSelect(result);
 
           return formatMultiSelect(result);
         }
 
-        if (isDateGuard(result)) {
+        if (shapeProperty === 'date') {
           assertsIsDate(result);
 
           return formatDate(result);

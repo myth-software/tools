@@ -1,5 +1,9 @@
 export function isShowOriginalRollupFromMultiSelectGuard(value: any) {
-  if (!value || typeof value !== 'object') {
+  if (!value) {
+    return false;
+  }
+
+  if (typeof value !== 'object') {
     return false;
   }
 
