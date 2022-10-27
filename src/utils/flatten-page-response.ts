@@ -82,6 +82,10 @@ export const flattenPageResponse =
         let result: unknown;
         result = entity[shapeProperty];
 
+        if (!result) {
+          return null;
+        }
+
         if (shapeProperty === 'files') {
           assertsIsFiles(result);
 
@@ -112,9 +116,6 @@ export const flattenPageResponse =
           return formatMultiSelect(result.array[0].multi_select);
         }
 
-        if (!result) {
-          return null;
-        }
         return dig(result, shapeProperties);
       } else {
         return entity;
