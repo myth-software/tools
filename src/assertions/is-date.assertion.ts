@@ -1,4 +1,4 @@
-import { isDateGuard } from 'src/guards';
+import { isDateGuard } from '../guards';
 
 export function assertsIsDate(value: unknown): asserts value is {
   start: string | null;

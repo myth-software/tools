@@ -1,4 +1,4 @@
-import { isRelationGuard } from 'src/guards';
+import { isRelationGuard } from '../guards';
 
 export function assertsIsRelation(
   value: unknown
