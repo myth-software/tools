@@ -4,7 +4,15 @@ export function isDateGuard(value: unknown) {
     value.hasOwnProperty('end') &&
     value.hasOwnProperty('time_zone');
 
-  if (value && typeof value === 'object' && !hasCorrectProperties(value)) {
+  if (!value) {
+    return false;
+  }
+
+  if (typeof value !== 'object') {
+    return false;
+  }
+
+  if (!hasCorrectProperties(value)) {
     return false;
   }
 
