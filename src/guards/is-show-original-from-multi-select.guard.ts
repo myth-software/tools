@@ -15,7 +15,7 @@ export function isShowOriginalRollupFromMultiSelectGuard(value: any) {
     return false;
   }
 
-  if (value.array[0].type !== 'multi_select') {
+  if (value.array?.[0]?.type !== 'multi_select') {
     return false;
   }
 

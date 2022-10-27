@@ -10,7 +10,7 @@ export function prepareProperties<T extends EntityMap = EntityMap>(
       type: shape?.[key]?.[0],
     }))
     .reduce((acc, { key, type }) => {
-      const value = entity[key];
+      const value = entity[key] as any;
       if (value === undefined) {
         return acc;
       }

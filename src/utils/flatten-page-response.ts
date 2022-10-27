@@ -1,9 +1,15 @@
 import {
+  assertsIsDate,
   assertsIsMultiSelect,
   assertsIsRelation,
   assertsisShowOriginalRollupFromMultiSelect,
 } from '../assertions';
-import { isShowOriginalRollupFromMultiSelectGuard } from '../guards';
+import {
+  isDateGuard,
+  isMultiSelectGuard,
+  isRelationGuard,
+  isShowOriginalRollupFromMultiSelectGuard,
+} from '../guards';
 import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
@@ -20,6 +26,40 @@ export const flattenPageResponse =
     }
     return flat as unknown as T;
 
+    function formatDate(date: {
+      start: string | null;
+      end: string | null;
+      time_zone: string | null;
+    }) {
+      const isRange = date.start && date.end;
+
+      if (isRange) {
+        return `${date.start}/${date.end}`;
+      }
+
+      if (date.start) {
+        return date.start;
+      }
+
+      return date.end;
+    }
+
+    function formatMultiSelect(
+      multi_select: {
+        name: string;
+      }[]
+    ) {
+      return multi_select.map(({ name }) => name);
+    }
+
+    function formatRelation(
+      relation: {
+        id: string;
+      }[]
+    ) {
+      return relation.map(({ id }) => id);
+    }
+
     function dig(entity: any, shapeProperties: (string | number)[]): unknown {
       if (shapeProperties.length > 0) {
         const shapeProperty = shapeProperties.shift() as string | number;
@@ -33,25 +73,27 @@ export const flattenPageResponse =
           result = entity['file'];
         }
 
-        if (shapeProperty === 'relation') {
+        if (isRelationGuard(result)) {
           assertsIsRelation(result);
-          result = result.map(({ id }) => id);
-          return result;
+          return formatRelation(result);
         }
 
-        if (shapeProperty === 'multi_select') {
+        if (isMultiSelectGuard(result)) {
           assertsIsMultiSelect(result);
-          result = result.map(({ name }) => name);
-          return result;
+
+          return formatMultiSelect(result);
         }
 
-        if (shapeProperty === 'rollup') {
-          if (!isShowOriginalRollupFromMultiSelectGuard(result)) {
-            return result;
-          }
+        if (isDateGuard(result)) {
+          assertsIsDate(result);
+
+          return formatDate(result);
+        }
+
+        if (isShowOriginalRollupFromMultiSelectGuard(result)) {
           assertsisShowOriginalRollupFromMultiSelect(result);
 
-          return result.array[0].multi_select.map(({ name }) => name);
+          return formatMultiSelect(result.array[0].multi_select);
         }
 
         if (!result) {

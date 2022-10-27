@@ -1,6 +1,6 @@
 {
   "name": "@myth-software/tools",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "kit for software engineering",
   "main": "dist/index.js",
   "scripts": {
@@ -26,5 +26,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
