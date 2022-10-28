@@ -1,17 +1,8 @@
-export function isFilesGuard(value: unknown) {
-  if (!value) {
-    return false;
+export function isFilesGuard(value: any) {
+  if (value?.files?.length === 0) {
+    return true;
   }
-
-  if (!Array.isArray(value)) {
-    return false;
-  }
-
-  if (
-    value.some(
-      (file) => !file.hasOwnProperty('file') && !file.hasOwnProperty('external')
-    )
-  ) {
+  if (!value.files?.[0]?.file && !value.files?.[0]?.external) {
     return false;
   }
 

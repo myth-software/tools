@@ -1,28 +1,19 @@
-import {
-  assertsIsDate,
-  assertsIsFiles,
-  assertsIsMultiSelect,
-  assertsIsRelation,
-  assertsisShowOriginalRollupFromMultiSelect,
-} from '../assertions';
+import * as assertions from '../assertions';
 import { isShowOriginalRollupFromMultiSelectGuard } from '../guards';
-import { Shape } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
 export const flattenPageResponse = <T>({
-  shape,
-  response: { id: page_id, properties },
-}: {
-  shape: Shape;
-  response: PageObjectResponse;
-}): T => {
+  id: page_id,
+  properties,
+}: PageObjectResponse): T => {
   const flat: {
     [key: string]: unknown;
   } = {
     page_id,
   };
-  for (const key in shape) {
-    flat[key] = dig(properties[key], [...shape[key]]);
+  for (const property in properties) {
+    const entity = properties[property];
+    flat[property] = flatten(entity);
   }
   return flat as unknown as T;
 
@@ -31,6 +22,10 @@ export const flattenPageResponse = <T>({
     end: string | null;
     time_zone: string | null;
   }) {
+    if (date === null) {
+      return date;
+    }
+
     const isRange = date.start && date.end;
 
     if (isRange) {
@@ -68,6 +63,26 @@ export const flattenPageResponse = <T>({
     return relation.map(({ id }) => id);
   }
 
+  function formatTitle(
+    title: {
+      plain_text: string;
+    }[]
+  ) {
+    return title.map(({ plain_text }) => plain_text).join(' ');
+  }
+
+  function formatRichText(
+    rich_text: {
+      plain_text: string;
+    }[]
+  ) {
+    if (rich_text.length === 0) {
+      return null;
+    }
+
+    return rich_text.map(({ plain_text }) => plain_text).join(' ');
+  }
+
   function formatFiles(
     files: {
       type: 'external' | 'file';
@@ -97,49 +112,144 @@ export const flattenPageResponse = <T>({
 
     return urls;
   }
+  function formatFormula(formula: { expression: unknown }) {
+    return formula.expression;
+  }
 
-  function dig(entity: any, shapeProperties: (string | number)[]): unknown {
-    if (shapeProperties.length > 0) {
-      const shapeProperty = shapeProperties.shift() as string | number;
-      const result: unknown = entity[shapeProperty];
+  function formatSelect(select: { name: string }) {
+    return select.name;
+  }
 
-      if (!result) {
-        return null;
+  function formatStatus(status: { name: string }) {
+    return status.name;
+  }
+
+  function flatten(entity: unknown): unknown {
+    assertions.assertsIsProperty(entity);
+
+    if (entity.type === 'number') {
+      assertions.assertsIsNumber(entity);
+
+      return entity.number;
+    }
+
+    if (entity.type === 'formula') {
+      assertions.assertsIsFormula(entity);
+
+      return formatFormula(entity.formula);
+    }
+
+    if (entity.type === 'select') {
+      assertions.assertsIsSelect(entity);
+
+      return formatSelect(entity.select);
+    }
+
+    if (entity.type === 'multi_select') {
+      assertions.assertsIsMultiSelect(entity);
+
+      return formatMultiSelect(entity.multi_select);
+    }
+
+    if (entity.type === 'status') {
+      assertions.assertsIsStatus(entity);
+
+      return formatStatus(entity.status);
+    }
+
+    if (entity.type === 'relation') {
+      assertions.assertsIsRelation(entity);
+
+      return formatRelation(entity.relation);
+    }
+
+    if (entity.type === 'rollup') {
+      assertions.assertsIsRollup(entity);
+      if (isShowOriginalRollupFromMultiSelectGuard(entity)) {
+        assertions.assertsisShowOriginalRollupFromMultiSelect(entity);
+
+        return formatMultiSelect(entity.array[0].multi_select);
       }
 
-      if (shapeProperty === 'files') {
-        assertsIsFiles(result);
+      return entity.rollup;
+    }
 
-        return formatFiles(result);
-      }
+    if (entity.type === 'title') {
+      assertions.assertsIsTitle(entity);
 
-      if (shapeProperty === 'relation') {
-        assertsIsRelation(result);
+      return formatTitle(entity.title);
+    }
 
-        return formatRelation(result);
-      }
+    if (entity.type === 'rich_text') {
+      assertions.assertsIsRichText(entity);
 
-      if (shapeProperty === 'multi_select') {
-        assertsIsMultiSelect(result);
+      return formatRichText(entity.rich_text);
+    }
 
-        return formatMultiSelect(result);
-      }
+    if (entity.type === 'url') {
+      assertions.assertsIsUrl(entity);
 
-      if (shapeProperty === 'date') {
-        assertsIsDate(result);
+      return entity.url;
+    }
 
-        return formatDate(result);
-      }
+    if (entity.type === 'people') {
+      assertions.assertsIsPeople(entity);
 
-      if (isShowOriginalRollupFromMultiSelectGuard(result)) {
-        assertsisShowOriginalRollupFromMultiSelect(result);
+      return entity.people;
+    }
 
-        return formatMultiSelect(result.array[0].multi_select);
-      }
+    if (entity.type === 'files') {
+      assertions.assertsIsFiles(entity);
 
-      return dig(result, shapeProperties);
-    } else {
-      return entity;
+      return formatFiles(entity);
+    }
+
+    if (entity.type === 'email') {
+      assertions.assertsIsEmail(entity);
+
+      return entity.email;
+    }
+
+    if (entity.type === 'phone_number') {
+      assertions.assertsIsPhoneNumber(entity);
+
+      return entity.phone_number;
+    }
+
+    if (entity.type === 'date') {
+      assertions.assertsIsDate(entity);
+
+      return formatDate(entity.date);
+    }
+
+    if (entity.type === 'checkbox') {
+      assertions.assertsIsCheckbox(entity);
+
+      return entity.checkbox;
+    }
+
+    if (entity.type === 'created_by') {
+      assertions.assertsIsCreatedBy(entity);
+
+      return entity.created_by;
+    }
+
+    if (entity.type === 'created_time') {
+      assertions.assertsIsCreatedTime(entity);
+
+      return entity.created_time;
+    }
+
+    if (entity.type === 'last_edited_by') {
+      assertions.assertsIsLasteEditedBy(entity);
+
+      return entity.last_edited_by;
+    }
+
+    if (entity.type === 'last_edited_time') {
+      assertions.assertsIsLastEditedTime(entity);
+
+      return entity.last_edited_time;
     }
   }
 };

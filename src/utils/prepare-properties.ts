@@ -7,7 +7,7 @@ export function prepareProperties<T extends EntityMap = EntityMap>(
   const properties = Object.keys(entity)
     .map((key) => ({
       key,
-      type: shape?.[key]?.[0],
+      type: shape?.[key],
     }))
     .reduce((acc, { key, type }) => {
       const value = entity[key] as any;
@@ -81,7 +81,7 @@ export function prepareProperties<T extends EntityMap = EntityMap>(
             ...acc,
           };
         }
-        case 'website': {
+        case 'url': {
           return {
             [key]: {
               url: value,
@@ -106,9 +106,6 @@ export function prepareProperties<T extends EntityMap = EntityMap>(
           };
         }
         case 'relation': {
-          if (!Array.isArray(value)) {
-            throw new TypeError('relation property not an array');
-          }
           return {
             ...acc,
             [key]: {

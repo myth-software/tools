@@ -1,13 +1,9 @@
-export function isRelationGuard(value: unknown) {
-  if (!value) {
-    return false;
+export function isRelationGuard(value: any) {
+  if (value?.relation?.length === 0) {
+    return true;
   }
 
-  if (!Array.isArray(value)) {
-    return false;
-  }
-
-  if (typeof value[0] === 'object' && !Object.keys(value[0])?.includes('id')) {
+  if (!value.relation?.[0]?.id) {
     return false;
   }
 

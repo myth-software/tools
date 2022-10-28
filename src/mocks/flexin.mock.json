@@ -1,0 +1,390 @@
+{
+  "object": "page",
+  "id": "d3d45044-d9c5-4611-b70d-6b02c5a00f3f",
+  "created_time": "2022-08-10T19:13:00.000Z",
+  "last_edited_time": "2022-10-26T16:40:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "edad9444-917d-4047-99a3-fa7c91f08543"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "edad9444-917d-4047-99a3-fa7c91f08543"
+  },
+  "cover": {
+    "type": "file",
+    "file": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c07e161e-9f90-46fb-96be-93b7d55daf00/cover-flexin.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221028T055507Z&X-Amz-Expires=3600&X-Amz-Signature=cbd15da06b807ac8f0653631de678772bbfb41a5eea0279afa8c7f933dd7abda&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "expiry_time": "2022-10-28T06:55:07.779Z"
+    }
+  },
+  "icon": {
+    "type": "file",
+    "file": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/78ac63f2-9148-4060-87bb-8c86da4892c8/x.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221028T055507Z&X-Amz-Expires=3600&X-Amz-Signature=776fc885a4bd3726befecd27ce5ded548b5b12d9db1f80606e2e142aaf7fd275&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "expiry_time": "2022-10-28T06:55:07.811Z"
+    }
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "a178fb39-35a1-4e55-a675-a2e8d99de216"
+  },
+  "archived": false,
+  "properties": {
+    "🏓 provided": {
+      "id": "%3Ej%5D~",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "city": { "id": "BK%7BV", "type": "rich_text", "rich_text": [] },
+    "🔍 areas of focus": {
+      "id": "Ceh%5C",
+      "type": "relation",
+      "relation": [
+        { "id": "c3dc4fcc-c0ee-4c6f-ad0d-40b79ce14ff2" },
+        { "id": "362e0a98-d4fc-45b6-9b9b-fcadb74490ea" }
+      ],
+      "has_more": true
+    },
+    "🏢 customer of": {
+      "id": "DO%5Du",
+      "type": "rollup",
+      "rollup": { "type": "array", "array": [], "function": "show_unique" }
+    },
+    "🏓 provides": {
+      "id": "DYHC",
+      "type": "relation",
+      "relation": [
+        { "id": "22e52019-f326-4479-a9fa-fa4d32ece072" },
+        { "id": "ac60b530-7804-4c79-8dc1-a88de39fb4b6" },
+        { "id": "e87cb822-d393-4b30-a609-9dbe02b23231" },
+        { "id": "53ea5f94-672a-470d-b62e-824cea0c3a77" }
+      ],
+      "has_more": false
+    },
+    "address 2": { "id": "EPl%40", "type": "rich_text", "rich_text": [] },
+    "address 1": { "id": "Fszj", "type": "rich_text", "rich_text": [] },
+    "📺 video": {
+      "id": "GyDI",
+      "type": "relation",
+      "relation": [
+        { "id": "a51287a3-556e-47b0-b7db-b9372d0ee8ae" },
+        { "id": "537cbb27-d980-40f6-b6f4-1dbe416ee69b" },
+        { "id": "a3e13c7b-3972-4fd8-aaf1-27958c5fbef1" },
+        { "id": "8894939e-0b32-4434-a4b4-48a926e2a82e" },
+        { "id": "1727a362-2aec-4532-8e4e-816f5d24aca0" },
+        { "id": "7d293e25-192e-4602-bfe5-bf67377d5e27" },
+        { "id": "2a8a4910-0072-4209-8102-9eb5aef9c8a4" },
+        { "id": "60060643-cda6-4db8-b540-30c215c9b091" },
+        { "id": "7240de9f-1bda-44f3-9d69-e843c6427053" },
+        { "id": "a4f04f00-2aa1-47e9-97d6-840a41d769ff" },
+        { "id": "a7d014f5-4b45-442a-ac06-f144f260f764" },
+        { "id": "7a57e0b0-6b76-4113-9268-950413e2c7c4" },
+        { "id": "f4844363-41ac-49e6-9315-6bd95cb2ae48" },
+        { "id": "61397633-0f71-4398-aae5-36e7cc9ad2bd" },
+        { "id": "21546b45-a2f1-4d54-9433-e3bcc50646b8" },
+        { "id": "28a43959-96c6-4170-994b-09fffc21efdc" },
+        { "id": "eba133e1-35ce-47ef-af07-faa602d80c2c" },
+        { "id": "349d7572-cfaf-4d4b-8018-0d0f9e050312" }
+      ],
+      "has_more": false
+    },
+    "📚 courses": {
+      "id": "HRsU",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "📍 locations": {
+      "id": "Nbks",
+      "type": "relation",
+      "relation": [
+        { "id": "f63c0627-dc06-4fc4-9940-091d6d47d161" },
+        { "id": "1c90dca4-f96b-4bb3-8e81-39cc255fc038" },
+        { "id": "13a8ac97-86d7-461a-b1ca-0d0582249a8a" }
+      ],
+      "has_more": false
+    },
+    "📅 provides years": {
+      "id": "RJg%5D",
+      "type": "rollup",
+      "rollup": {
+        "type": "array",
+        "array": [
+          { "type": "relation", "relation": [] },
+          { "type": "relation", "relation": [] },
+          { "type": "relation", "relation": [] },
+          { "type": "relation", "relation": [] }
+        ],
+        "function": "show_unique"
+      }
+    },
+    "🎨 colors": {
+      "id": "RT~H",
+      "type": "relation",
+      "relation": [
+        { "id": "3fd4dbab-262e-4f44-a8e1-ad3f59e5d951" },
+        { "id": "21a3ca11-7850-4ad1-843a-313b4cf06765" }
+      ],
+      "has_more": false
+    },
+    "🙂 employees": {
+      "id": "T%40a%60",
+      "type": "relation",
+      "relation": [{ "id": "efaae730-cf5b-41e3-94f7-ad9778b798e9" }],
+      "has_more": false
+    },
+    "🤑 sold": {
+      "id": "TVPk",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🏢 competitors": {
+      "id": "VvVo",
+      "type": "relation",
+      "relation": [
+        { "id": "821fb399-8f0a-4c51-bdb4-dd474d2c6fd5" },
+        { "id": "0851d1e0-bcb1-480f-970d-b84a6c39392c" },
+        { "id": "3354d464-6f0d-4143-8260-111eed1a4609" },
+        { "id": "bd707db9-e828-4257-8607-f011da305e78" },
+        { "id": "ebbb24b6-e969-4d2c-b884-d33f92286dd5" },
+        { "id": "38303e38-f941-466a-836a-11635333e62c" },
+        { "id": "427ca17d-f004-432e-94d1-c9b924c2f1c2" },
+        { "id": "881e1233-680e-4abc-b085-45ca3728a157" },
+        { "id": "9608dc56-95ee-448d-8ef3-c7e8019674de" },
+        { "id": "c8225a9f-6628-4c09-b04a-9a14344a885e" },
+        { "id": "3e79f602-0453-400f-a9e9-e86eca600447" },
+        { "id": "6c60f93a-a772-44be-a9d3-22144af1e4fb" },
+        { "id": "831ee9c0-5923-4091-845f-f30a65ca85cf" },
+        { "id": "e95a98b3-1e65-40c3-a621-8505476a6928" }
+      ],
+      "has_more": true
+    },
+    "🤪 overlays": {
+      "id": "ZTcq",
+      "type": "relation",
+      "relation": [
+        { "id": "97f63432-1dee-4e19-b6fb-87713ac1a800" },
+        { "id": "1d5de121-f1e1-431f-ad04-f2cbbd1aa06d" },
+        { "id": "6dbba0e6-f17b-4342-b2e1-e2a07d5b3f73" },
+        { "id": "ee34a9c2-3bb7-42ea-86a3-657b91283ea3" },
+        { "id": "d5e6e4a2-b4c5-486c-932a-023569714221" },
+        { "id": "9a96aca3-e0fb-47f4-8822-1d4ac947f266" },
+        { "id": "048db5e5-b06f-47a3-85bd-0b978deb2407" },
+        { "id": "035225d9-3e8d-48f1-afbf-ba1b157df7f4" },
+        { "id": "9ad5c42e-cb0b-497d-9dd9-dfec79fafa00" },
+        { "id": "9d6c9f8b-0775-40b0-a9c8-966982dc819c" },
+        { "id": "ed39dbf0-5db0-4954-9bac-512ea9a824ec" },
+        { "id": "363c73f7-1f26-4492-be7f-b0adf53f8b20" },
+        { "id": "b2cfafa5-3c10-4298-aebe-802a4dbf525b" },
+        { "id": "e4f3c3f7-f4d9-466d-a365-a1694664abe7" },
+        { "id": "ddaa0ae9-ff25-4848-8727-a65dec053409" },
+        { "id": "6785759a-35ba-4a1c-9599-cfc703829562" },
+        { "id": "12232366-567c-485a-b121-487d846e0b6e" },
+        { "id": "8cdd97c2-701e-4b57-8c1a-dd9b029a113c" },
+        { "id": "bb7627aa-f11f-485f-9bc4-e1e980c79582" },
+        { "id": "f4410f95-2ab0-40a0-8abc-cda27bb96c8c" },
+        { "id": "dc4d6737-f933-47a6-9a99-3b287ed30d52" },
+        { "id": "a57c515e-d913-4578-9135-499f20de9947" },
+        { "id": "ad611a5c-792d-4ea8-b95d-f62e1efb3293" }
+      ],
+      "has_more": true
+    },
+    "phone number": {
+      "id": "%5B_yO",
+      "type": "phone_number",
+      "phone_number": "702-123-4567"
+    },
+    "state": { "id": "%5Ck%3Eu", "type": "rich_text", "rich_text": [] },
+    "last edited time": {
+      "id": "%60%5BbT",
+      "type": "last_edited_time",
+      "last_edited_time": "2022-10-26T16:40:00.000Z"
+    },
+    "website": { "id": "cX%60~", "type": "url", "url": "flexin.io" },
+    "📷 images": {
+      "id": "c%7BI%3F",
+      "type": "relation",
+      "relation": [
+        { "id": "502a9cfa-6ce7-4c1f-b385-b0b7f2095bee" },
+        { "id": "0a9bcba0-e1f3-4474-adce-fe7369a597fb" },
+        { "id": "f942a02c-0329-460e-9c70-edd56ac53ff0" },
+        { "id": "1fcc3e39-4b38-4da7-be44-424ee11b6218" },
+        { "id": "4f7eeabe-136d-40b3-81b0-c49c0c84ea63" },
+        { "id": "50b5483c-53b8-48ad-a1e6-f28f8ae28d80" },
+        { "id": "6f12f877-1c4c-4fe6-92bb-77545a650150" },
+        { "id": "bfbb2eaa-2fb0-42eb-9a68-6399041dee85" },
+        { "id": "227ba252-4d4a-4c3a-b521-1eeb6c585ad1" },
+        { "id": "27263389-576c-48cc-b135-0077c63cbf02" },
+        { "id": "45e3669e-b5f6-4413-bc46-d87779190ae4" },
+        { "id": "e4e6c868-ed1f-4b56-9542-1f097f093b67" },
+        { "id": "e6d65b81-4a28-4350-b6ca-c37ee705a72d" },
+        { "id": "b25ca036-9684-4bb3-9ef6-baf151fd82a9" },
+        { "id": "4700a781-6830-4a1f-8d6c-ef3a28ba1151" },
+        { "id": "7b30363d-5524-4640-8fe8-bb6208b03dc8" },
+        { "id": "a4c12e3d-56ad-4e17-9e01-c998c424835b" },
+        { "id": "a57321d3-4b3b-46d1-8dfe-c27342815f54" },
+        { "id": "3530dbaf-5bd2-4445-895c-f6de15ef04d9" },
+        { "id": "3a1439a6-267d-4514-9137-68d5e587577b" },
+        { "id": "b39f58a9-e27a-4406-b106-460031e1cba2" },
+        { "id": "b47d8711-a94d-4180-9073-6add049083ea" },
+        { "id": "fed27ed9-6383-4e29-8b46-fb76f4a5f509" }
+      ],
+      "has_more": true
+    },
+    "email": {
+      "id": "dM%5CQ",
+      "type": "email",
+      "email": "general@flexin.io"
+    },
+    "🔒 arguments": {
+      "id": "hubT",
+      "type": "relation",
+      "relation": [{ "id": "e72f4225-3e2d-4540-a6f1-1ad33ff27603" }],
+      "has_more": false
+    },
+    "created time": {
+      "id": "kEqk",
+      "type": "created_time",
+      "created_time": "2022-08-10T19:13:00.000Z"
+    },
+    "🏪 markets": {
+      "id": "kMIz",
+      "type": "relation",
+      "relation": [{ "id": "89c12800-2052-4387-8cd3-e96cdfc4eac6" }],
+      "has_more": false
+    },
+    "✒️ writing": {
+      "id": "kRtz",
+      "type": "relation",
+      "relation": [
+        { "id": "295c2694-e325-4943-a602-e6bc749824d5" },
+        { "id": "7bcf6d5f-bb0f-4fb9-9b65-be442e29288a" },
+        { "id": "881c9973-0701-4e38-b49e-0a8ea9f6e373" },
+        { "id": "b22b5005-8093-4659-9d31-c482dcb17d18" },
+        { "id": "bebf9a1a-fd49-4b23-92ca-05b7c672535a" },
+        { "id": "f2a7ac37-ae00-4ee1-942d-136d0ad5bdbb" },
+        { "id": "ff53af09-8f95-46f5-bb8f-40dc7cb803aa" },
+        { "id": "050d9ba6-4b58-444f-9dac-5520312b2acd" },
+        { "id": "b605ae42-4d3a-4e69-b711-687d8c641d59" },
+        { "id": "02bf1b39-4104-4218-8b2d-b823794b4e72" },
+        { "id": "37025451-e67a-4dd1-89e5-ccf123047a28" },
+        { "id": "9d293c5c-c201-411f-9444-7acd328f6271" },
+        { "id": "954407bd-90a7-487b-b385-937bf2f95425" },
+        { "id": "ed7692aa-d2e8-4659-844e-3dac0f3aa28d" },
+        { "id": "0ea017b0-668a-4004-9905-ea40c1191d2f" },
+        { "id": "45fabbfd-ad0c-4f2c-9381-8da29ace60d7" },
+        { "id": "7a0f9995-d0c2-407d-bc76-8fc887e8d7b5" },
+        { "id": "c372c715-88d3-4ed7-a5b5-304d89064cbc" },
+        { "id": "8cbc68e8-da31-45e2-a7fa-92953047e85b" },
+        { "id": "170dc8ad-5385-4bdc-a3d7-156b9fd9aca9" },
+        { "id": "a3aa142d-6981-4c8a-a974-d86eaad3d5a3" },
+        { "id": "dfd69ddd-bb9b-46a8-b8c8-d6066ae065bd" }
+      ],
+      "has_more": true
+    },
+    "🎭 roles": {
+      "id": "k%5B%3AV",
+      "type": "relation",
+      "relation": [
+        { "id": "dc5a19ad-3e8b-404c-90a3-dda7fb024372" },
+        { "id": "ad18b198-ab5d-4211-b900-65ce382c987c" },
+        { "id": "648df662-7f4f-48d8-887c-a582d7d42aec" },
+        { "id": "64b34218-48fb-4d5c-92d0-fc4ab0dd43c8" },
+        { "id": "fc8187ac-26a3-4de7-bf2e-67bc5555a324" },
+        { "id": "a551b0d4-bc63-4034-b625-ce7ca69ca372" },
+        { "id": "9b6fda39-131e-4a32-8417-2d5bc3cc6d7b" },
+        { "id": "cc213278-1cb9-45f3-84f7-65c82c384e75" },
+        { "id": "13841aba-a4aa-436e-84ae-67ca82459e20" },
+        { "id": "f387ffbf-00f0-47d3-b3eb-19e3e18917dd" },
+        { "id": "89328a78-def1-4f4c-94d7-4d200b1f5fdb" },
+        { "id": "10a1623d-c289-4541-bfbc-cc4278027640" },
+        { "id": "ac5e7c41-160b-4dda-8827-2fffd8bfa902" },
+        { "id": "f8cbcfa4-a052-4419-bba7-c84aeaed6f8a" },
+        { "id": "de07f7c3-e51b-442a-a1ed-50eab306be15" },
+        { "id": "563cff05-87f9-4b05-8d34-4c0059e31c68" },
+        { "id": "4181d92e-1e26-492e-a5f4-6f98acb7e312" },
+        { "id": "7d19585d-cb73-403c-a71a-eed0cf9f9659" },
+        { "id": "a5cfbffc-64cc-426c-af58-be3e3033f038" },
+        { "id": "b9791510-35e5-48fe-9e11-0e55f28cb1b6" },
+        { "id": "833c2e1e-2d95-4974-8fd7-86f723e7aa90" },
+        { "id": "88d887f8-f00a-477d-8e09-0719813c44a2" },
+        { "id": "68718208-79a3-4bfb-b131-c399fc7c1f50" }
+      ],
+      "has_more": false
+    },
+    "☠️ risks": {
+      "id": "oq%3DM",
+      "type": "relation",
+      "relation": [
+        { "id": "40a99b0b-003e-4857-87c0-27fd7544766d" },
+        { "id": "6bd07af1-3c32-45b4-ad12-2bf68354ccf1" },
+        { "id": "34ebd286-ead1-49ef-b0ca-608c7526fcb1" }
+      ],
+      "has_more": false
+    },
+    "⚡ threats": {
+      "id": "p~ez",
+      "type": "relation",
+      "relation": [{ "id": "ada97519-949e-4aaa-8f2f-e62f44e4bc40" }],
+      "has_more": false
+    },
+    "🏋️ modifiers": {
+      "id": "t%5CF~",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🎟️ cards": {
+      "id": "t%5DEl",
+      "type": "relation",
+      "relation": [
+        { "id": "156ecd9a-bad1-4ee8-acfe-b27f7deac237" },
+        { "id": "f2f08516-a2e9-4f49-b787-62488c6bbc7c" },
+        { "id": "c71a7d67-4506-47c1-8dc7-2c314a3ac152" },
+        { "id": "92f9c4ec-3707-4c1f-a8ec-5fbd5aab5cfe" }
+      ],
+      "has_more": false
+    },
+    "classification": {
+      "id": "vPIu",
+      "type": "select",
+      "select": { "id": "Qdht", "name": "internal", "color": "default" }
+    },
+    "zipcode": { "id": "w%5D%7Bi", "type": "rich_text", "rich_text": [] },
+    "🤑 purchased": {
+      "id": "xHT%7C",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "📅 provided years": {
+      "id": "%7BFiT",
+      "type": "rollup",
+      "rollup": { "type": "array", "array": [], "function": "show_unique" }
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "flexin", "link": null },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "flexin",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/flexin-d3d45044d9c54611b70d6b02c5a00f3f"
+}
