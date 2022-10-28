@@ -1,16 +1,9 @@
-export function isMultiSelectGuard(value: unknown) {
-  if (!value) {
-    return false;
+export function isMultiSelectGuard(value: any) {
+  if (value?.multi_select?.length === 0) {
+    return true;
   }
 
-  if (!Array.isArray(value)) {
-    return false;
-  }
-
-  if (
-    typeof value[0] === 'object' &&
-    !Object.keys(value[0])?.includes('name')
-  ) {
+  if (!value?.multi_select?.[0]?.name) {
     return false;
   }
 
