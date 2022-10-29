@@ -1,6 +1,8 @@
 import { flattenPageResponse } from './flatten-page-response';
 const flexin = require('../mocks/flexin.mock.json');
 const goal = require('../mocks/goal.mock.json');
+const emptySet = require('../mocks/empty-set.mock.json');
+
 describe('flatten page response', () => {
   test('organizations', () => {
     const entity = flattenPageResponse(flexin);
@@ -10,6 +12,12 @@ describe('flatten page response', () => {
 
   test('goals', () => {
     const entity = flattenPageResponse(goal);
+
+    expect(entity).toMatchObject({});
+  });
+
+  test('empty sets', () => {
+    const entity = flattenPageResponse(emptySet);
 
     expect(entity).toMatchObject({});
   });

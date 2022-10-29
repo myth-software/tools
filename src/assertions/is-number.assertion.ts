@@ -1,7 +1,7 @@
 import { isNumberGuard } from '../guards';
 
 export function assertsIsNumber(value: unknown): asserts value is {
-  number: number;
+  number: number | null;
 } {
   if (!isNumberGuard(value)) {
     console.error(value);
