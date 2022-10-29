@@ -143,7 +143,7 @@ export const flattenPageResponse = <T = EntityMap>({
     if (entity.type === 'select') {
       assertions.assertsIsSelect(entity);
 
-      return formatSelect(entity.select);
+      return entity.select ? formatSelect(entity.select) : null;
     }
 
     if (entity.type === 'multi_select') {
@@ -155,7 +155,7 @@ export const flattenPageResponse = <T = EntityMap>({
     if (entity.type === 'status') {
       assertions.assertsIsStatus(entity);
 
-      return formatStatus(entity.status);
+      return entity.status ? formatStatus(entity.status) : null;
     }
 
     if (entity.type === 'relation') {
@@ -202,7 +202,7 @@ export const flattenPageResponse = <T = EntityMap>({
     if (entity.type === 'files') {
       assertions.assertsIsFiles(entity);
 
-      return formatFiles(entity);
+      return formatFiles(entity.files);
     }
 
     if (entity.type === 'email') {

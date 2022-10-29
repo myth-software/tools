@@ -1,14 +1,16 @@
 import { isFilesGuard } from '../guards';
 
 export function assertsIsFiles(value: unknown): asserts value is {
-  type: 'external' | 'file';
-  external?: {
-    url: string;
-  };
-  file?: {
-    url: string;
-  };
-}[] {
+  files: {
+    type: 'external' | 'file';
+    external?: {
+      url: string;
+    };
+    file?: {
+      url: string;
+    };
+  }[];
+} {
   if (!isFilesGuard(value)) {
     console.error(value);
     throw new TypeError(
