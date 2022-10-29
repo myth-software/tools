@@ -1,8 +1,9 @@
 import * as assertions from '../assertions';
 import { isShowOriginalRollupFromMultiSelectGuard } from '../guards';
+import { EntityMap } from '../interfaces';
 import { PageObjectResponse } from '../types';
 
-export const flattenPageResponse = <T>({
+export const flattenPageResponse = <T = EntityMap>({
   id: page_id,
   properties,
 }: PageObjectResponse): T => {
