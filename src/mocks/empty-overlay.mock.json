@@ -1,0 +1,99 @@
+{
+  "object": "page",
+  "id": "ff4890c7-5ffa-4639-b616-25cc00e6d847",
+  "created_time": "2022-10-29T19:31:00.000Z",
+  "last_edited_time": "2022-10-29T19:31:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "5d44b6d8-384e-4122-9bc2-1207be6f4cf2"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "5d44b6d8-384e-4122-9bc2-1207be6f4cf2"
+  },
+  "cover": null,
+  "icon": { "type": "emoji", "emoji": "🤪" },
+  "parent": {
+    "type": "database_id",
+    "database_id": "442b4ae2-5e0d-4cd1-bd62-a35bfa5b088a"
+  },
+  "archived": false,
+  "properties": {
+    "status": {
+      "id": "%3CMxC",
+      "type": "status",
+      "status": {
+        "id": "a76f73bd-71ff-4a78-9645-64e73c501299",
+        "name": "draft",
+        "color": "default"
+      }
+    },
+    "source": { "id": "CwGH", "type": "files", "files": [] },
+    "🔢 set": {
+      "id": "FSJi",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "created time": {
+      "id": "MB_E",
+      "type": "created_time",
+      "created_time": "2022-10-29T19:31:00.000Z"
+    },
+    "thumbnail": { "id": "U%5C%60N", "type": "files", "files": [] },
+    "last edited time": {
+      "id": "%5BmOb",
+      "type": "last_edited_time",
+      "last_edited_time": "2022-10-29T19:31:00.000Z"
+    },
+    "📰 news": {
+      "id": "%5Co%3E%5D",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🏢 organization": {
+      "id": "%5EGUW",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🎟 card": {
+      "id": "_YUV",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🙂 person": {
+      "id": "c~Ni",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "output": { "id": "hs%60H", "type": "files", "files": [] },
+    "resized": { "id": "iHb%3D", "type": "files", "files": [] },
+    "visibility": { "id": "lfvM", "type": "select", "select": null },
+    "data": { "id": "%7DRiS", "type": "files", "files": [] },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "horse-purple", "link": null },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "horse-purple",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/horse-purple-ff4890c75ffa4639b61625cc00e6d847"
+}

@@ -1,7 +1,7 @@
 import { isStatusGuard } from '../guards';
 
 export function assertsIsStatus(value: unknown): asserts value is {
-  status: { name: string };
+  status: { name: string } | null;
 } {
   if (!isStatusGuard(value)) {
     console.error(value);
