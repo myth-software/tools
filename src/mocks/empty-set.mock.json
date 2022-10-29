@@ -1,0 +1,98 @@
+{
+  "object": "page",
+  "id": "ef78058d-e5bc-49cf-a1b2-dc3ced0021bb",
+  "created_time": "2022-10-29T19:19:00.000Z",
+  "last_edited_time": "2022-10-29T19:19:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "5d44b6d8-384e-4122-9bc2-1207be6f4cf2"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "5d44b6d8-384e-4122-9bc2-1207be6f4cf2"
+  },
+  "cover": null,
+  "icon": { "type": "emoji", "emoji": "🔢" },
+  "parent": {
+    "type": "database_id",
+    "database_id": "acdd8ff8-8f51-48f6-ba8d-83f650e1dfc9"
+  },
+  "archived": false,
+  "properties": {
+    "🤪 overlays": {
+      "id": "%40lbQ",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "✔️ goal": {
+      "id": "ApnH",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "🙂 athlete": {
+      "id": "JjI%60",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "score": { "id": "%5Ej%60Z", "type": "number", "number": null },
+    "🏋️ modifiers": {
+      "id": "bmh%5D",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "created time": {
+      "id": "eLB%40",
+      "type": "created_time",
+      "created_time": "2022-10-29T19:19:00.000Z"
+    },
+    "🤌 corrections": {
+      "id": "fBzO",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "📏 progressions": {
+      "id": "pJ%7Di",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "count": { "id": "xOPw", "type": "number", "number": null },
+    "🤸 exercise": {
+      "id": "%7D%3BeC",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "last edited time": {
+      "id": "~hP%3D",
+      "type": "last_edited_time",
+      "last_edited_time": "2022-10-29T19:19:00.000Z"
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "spoonbill-copper", "link": null },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "spoonbill-copper",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/spoonbill-copper-ef78058de5bc49cfa1b2dc3ced0021bb"
+}
