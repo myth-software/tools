@@ -4,6 +4,7 @@ const goal = require('../mocks/goal.mock.json');
 const emptySet = require('../mocks/empty-set.mock.json');
 const emptyOverlay = require('../mocks/empty-overlay.mock.json');
 const prize = require('../mocks/prize.mock.json');
+const person = require('../mocks/person.mock.json');
 
 describe('flatten page response', () => {
   test('organizations', () => {
@@ -32,6 +33,12 @@ describe('flatten page response', () => {
 
   test('prize', () => {
     const entity = flattenPageResponse(prize);
+
+    expect(entity).toMatchObject({});
+  });
+
+  test('person', () => {
+    const entity = flattenPageResponse(person);
 
     expect(entity).toMatchObject({});
   });

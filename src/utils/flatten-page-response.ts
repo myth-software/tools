@@ -1,8 +1,46 @@
 import * as assertions from '../assertions';
 import { isRollupArrayGuard, isRollupShowOriginalGuard } from '../guards';
 import { EntityMap } from '../interfaces';
-import { PageObjectResponse } from '../types';
+import { EmojiRequest, PageObjectResponse } from '../types';
 import { formatProperties } from './format-properties';
+
+function formatIcon(
+  icon:
+    | {
+        type: 'emoji';
+        emoji: EmojiRequest;
+      }
+    | {
+        type: 'external';
+        external: {
+          url: string;
+        };
+      }
+    | {
+        type: 'file';
+        file: {
+          url: string;
+          expiry_time: string;
+        };
+      }
+    | null
+) {
+  if (!icon) {
+    return null;
+  }
+
+  if (icon?.type === 'emoji') {
+    return icon.emoji;
+  }
+
+  if (icon?.type === 'external') {
+    return icon.external.url;
+  }
+
+  if (icon?.type === 'file') {
+    return icon.file.url;
+  }
+}
 
 export const flattenPageResponse = <T = EntityMap>({
   id: page_id,
@@ -13,7 +51,7 @@ export const flattenPageResponse = <T = EntityMap>({
     [key: string]: unknown;
   } = {
     page_id,
-    icon: icon?.type === 'emoji' ? icon.emoji : null,
+    icon: formatIcon(icon),
   };
   for (const property in properties) {
     const entity = properties[property];
@@ -30,8 +68,8 @@ export const flattenPageResponse = <T = EntityMap>({
       if (isRollupShowOriginalGuard(entity) && isRollupArrayGuard(entity)) {
         assertions.assertsIsRollupShowOriginal(entity);
         assertions.assertsIsRollupArray(entity);
-
-        return formatProperties(entity.rollup.array[0]);
+        const array = entity.rollup.array;
+        return array.length === 0 ? null : formatProperties(array[0]);
       }
 
       return entity.rollup;
