@@ -107,6 +107,11 @@ export const formatProperties = (entity: { type: PROPERTY_TYPES }) => {
   function formatStatus(status: { name: string }) {
     return status.name;
   }
+  if (!entity?.type) {
+    console.error(entity);
+    throw new Error('no type');
+  }
+
   if (entity.type === 'number') {
     assertions.assertsIsNumber(entity);
 
