@@ -1,12 +1,13 @@
 {
   "name": "@myth-software/tools",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "kit for software engineering",
   "main": "dist/index.js",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "tsc -p tsconfig.json",
-    "test": "jest",
-    "pretest": "rm -rf dist"
+    "pretest": "rm -rf dist",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
