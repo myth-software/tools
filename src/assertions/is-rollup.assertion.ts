@@ -1,7 +1,9 @@
 import { isRollupGuard } from '../guards';
 
 export function assertsIsRollup(value: unknown): asserts value is {
-  rollup: string;
+  rollup: {
+    function: string;
+  };
 } {
   if (!isRollupGuard(value)) {
     console.error(value);

@@ -1,0 +1,130 @@
+{
+  "object": "page",
+  "id": "3bcdd85e-c244-4462-9300-e9e0dff44fe5",
+  "created_time": "2022-10-26T03:18:00.000Z",
+  "last_edited_time": "2022-10-26T03:29:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "edad9444-917d-4047-99a3-fa7c91f08543"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "edad9444-917d-4047-99a3-fa7c91f08543"
+  },
+  "cover": null,
+  "icon": {
+    "type": "emoji",
+    "emoji": "🏆"
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "6316cca2-ee90-42fd-9841-eea1c630e84a"
+  },
+  "archived": false,
+  "properties": {
+    "modifier website": {
+      "id": "Hl%3Be",
+      "type": "rollup",
+      "rollup": {
+        "type": "array",
+        "array": [
+          {
+            "type": "url",
+            "url": "https://www.rubberbanditz.com/rubberbanditz-lightweight-parallettes/"
+          }
+        ],
+        "function": "show_original"
+      }
+    },
+    "modifier provider": {
+      "id": "%5EAMs",
+      "type": "rollup",
+      "rollup": {
+        "type": "array",
+        "array": [
+          {
+            "type": "relation",
+            "relation": []
+          }
+        ],
+        "function": "show_original"
+      }
+    },
+    "🏋️ modifier": {
+      "id": "gkgv",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "7990496f-485d-448a-8079-e7ba4cd68fa5"
+        }
+      ],
+      "has_more": false
+    },
+    "✔️ goals": {
+      "id": "pc%60%7D",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "c05db508-f21e-4e5b-b80b-e35519332e76"
+        }
+      ],
+      "has_more": false
+    },
+    "modifier name": {
+      "id": "wDQD",
+      "type": "rollup",
+      "rollup": {
+        "type": "array",
+        "array": [
+          {
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "lightweight parallettes",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "lightweight parallettes",
+                "href": null
+              }
+            ]
+          }
+        ],
+        "function": "show_original"
+      }
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "first challenge",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "first challenge",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/first-challenge-3bcdd85ec24444629300e9e0dff44fe5"
+}
