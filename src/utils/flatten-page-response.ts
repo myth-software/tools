@@ -1,6 +1,11 @@
+import { PROPERTY_TYPES } from 'src/enums';
 import * as assertions from '../assertions';
-import { isRollupArrayGuard, isRollupShowOriginalGuard } from '../guards';
-import { EntityMap } from '../interfaces';
+import {
+  isRollupArrayGuard,
+  isRollupShowOriginalGuard,
+  isRollupShowUniqueGuard,
+} from '../guards';
+import { EntityMap, Shape } from '../interfaces';
 import { EmojiRequest, PageObjectResponse } from '../types';
 import { formatProperties } from './format-properties';
 
@@ -48,25 +53,33 @@ export const flattenPageResponse = <T = EntityMap>({
   icon,
 }: PageObjectResponse): T => {
   const flat: {
+    _shape: Shape;
     [key: string]: unknown;
   } = {
+    _shape: {},
     page_id,
     icon: formatIcon(icon),
   };
   for (const property in properties) {
     const entity = properties[property];
+    assertions.assertsIsProperty(entity);
     flat[property] = flatten(entity);
+    flat._shape[property] = entity.type;
   }
   return flat as unknown as T;
 
-  function flatten(entity: unknown): unknown {
-    assertions.assertsIsProperty(entity);
-
+  function flatten(entity: { type: PROPERTY_TYPES }): unknown {
     if (entity.type === 'rollup') {
       assertions.assertsIsRollup(entity);
 
       if (isRollupShowOriginalGuard(entity) && isRollupArrayGuard(entity)) {
         assertions.assertsIsRollupShowOriginal(entity);
+        assertions.assertsIsRollupArray(entity);
+        const array = entity.rollup.array;
+        return array.length === 0 ? null : formatProperties(array[0]);
+      }
+
+      if (isRollupShowUniqueGuard(entity) && isRollupArrayGuard(entity)) {
         assertions.assertsIsRollupArray(entity);
         const array = entity.rollup.array;
         return array.length === 0 ? null : formatProperties(array[0]);

@@ -1,13 +1,12 @@
-import { EntityMap, Shape } from '../interfaces';
+import { EntityMap } from '../interfaces';
 
-export function prepareProperties<T extends EntityMap = EntityMap>(
-  shape: Shape,
-  entity: T
-) {
+export function expandProperties<T extends EntityMap = EntityMap>(entity: T) {
+  const shape = entity._shape;
   const properties = Object.keys(entity)
+    .filter((key) => key !== '_shape')
     .map((key) => ({
       key,
-      type: shape?.[key],
+      type: shape![key],
     }))
     .reduce((acc, { key, type }) => {
       const value = entity[key] as any;

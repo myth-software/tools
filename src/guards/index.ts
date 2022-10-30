@@ -16,6 +16,7 @@ export * from './is-relation.guard';
 export * from './is-rich-text.guard';
 export * from './is-rollup-array.guard';
 export * from './is-rollup-show-original.guard';
+export * from './is-rollup-show-unique.guard';
 export * from './is-rollup.guard';
 export * from './is-select.guard';
 export * from './is-status.guard';
