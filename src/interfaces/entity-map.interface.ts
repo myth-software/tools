@@ -1,3 +1,6 @@
+import { Shape } from './shape.interface';
+
 export interface EntityMap {
-  [key: string]: undefined | string | number | boolean | string[];
+  _shape?: Shape;
+  [key: string]: undefined | string | number | boolean | string[] | Shape;
 }

@@ -1,10 +1,10 @@
 import { flattenPageResponse } from './flatten-page-response';
-const flexin = require('../mocks/flexin.mock.json');
-const goal = require('../mocks/goal.mock.json');
-const emptySet = require('../mocks/empty-set.mock.json');
-const emptyOverlay = require('../mocks/empty-overlay.mock.json');
-const prize = require('../mocks/prize.mock.json');
-const person = require('../mocks/person.mock.json');
+const flexin = require('../mocks/pages/flexin.mock.json');
+const goal = require('../mocks/pages/goal.mock.json');
+const emptySet = require('../mocks/pages/empty-set.mock.json');
+const emptyOverlay = require('../mocks/pages/empty-overlay.mock.json');
+const prize = require('../mocks/pages/prize.mock.json');
+const person = require('../mocks/pages/person.mock.json');
 
 describe('flatten page response', () => {
   test('organizations', () => {
