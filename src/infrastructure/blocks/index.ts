@@ -1,5 +1,9 @@
-export * from './blocks-children-append';
-export * from './blocks-children-list';
-export * from './blocks-children-list-all';
-export * from './blocks-delete';
-export * from './blocks-delete-all';
+import * as children from './children';
+import { del } from './delete';
+import { deleteAll } from './delete-all';
+
+export const blocks = {
+  delete: del,
+  deleteAll,
+  children,
+};

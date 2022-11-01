@@ -4,7 +4,7 @@ import {
   PageObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 
-export const pagesCreate = (body: CreatePageParameters) => {
+export const create = (body: CreatePageParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,
