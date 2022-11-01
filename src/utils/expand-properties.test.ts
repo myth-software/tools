@@ -1,9 +1,16 @@
 import { expandProperties } from './expand-properties';
-const person = require('../mocks/entities/person.mock.json');
+const personEntity = require('../mocks/entities/person_peter-b-smith.mock.json');
+const setEntity = require('../mocks/entities/set_wildfowl-amaranth.mock.json');
 
 describe('expand properties', () => {
   test('person', () => {
-    const properties = expandProperties(person);
+    const properties = expandProperties(personEntity);
+
+    expect(properties).toMatchObject({});
+  });
+
+  test('set', () => {
+    const properties = expandProperties(setEntity);
 
     expect(properties).toMatchObject({});
   });

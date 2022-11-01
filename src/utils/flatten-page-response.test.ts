@@ -4,7 +4,7 @@ const goal = require('../mocks/pages/goal.mock.json');
 const emptySet = require('../mocks/pages/empty-set.mock.json');
 const emptyOverlay = require('../mocks/pages/empty-overlay.mock.json');
 const prize = require('../mocks/pages/prize.mock.json');
-const person = require('../mocks/pages/person.mock.json');
+const person = require('../mocks/pages/person_peter-b-smith.mock.json');
 const setPage = require('../mocks/pages/set_wildfowl-amaranth.mock.json');
 const setEntity = require('../mocks/entities/set_wildfowl-amaranth.mock.json');
 

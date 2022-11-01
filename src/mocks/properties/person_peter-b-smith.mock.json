@@ -1,0 +1,358 @@
+{
+  "phone number": { "phone_number": "3158980928" },
+  "notes": { "rich_text": [] },
+  "name": { "title": [{ "text": { "content": "Peter B Smith" } }] },
+  "address 1": {
+    "rich_text": [
+      { "type": "text", "text": { "content": "1100 cumberland ave" } }
+    ]
+  },
+  "github": {
+    "rich_text": [{ "type": "text", "text": { "content": "peterbsmyth" } }]
+  },
+  "instagram": {
+    "rich_text": [{ "type": "text", "text": { "content": "peterbsmyth" } }]
+  },
+  "linkedin": {
+    "rich_text": [{ "type": "text", "text": { "content": "peterbsmyth " } }]
+  },
+  "job title": {
+    "rich_text": [
+      { "type": "text", "text": { "content": "chief engineering artist" } }
+    ]
+  },
+  "company": {
+    "rich_text": [{ "type": "text", "text": { "content": "flexin, inc" } }]
+  },
+  "telegram": {
+    "rich_text": [{ "type": "text", "text": { "content": "thickasjello" } }]
+  },
+  "whatsapp": { "checkbox": true },
+  "twitter": {
+    "rich_text": [{ "type": "text", "text": { "content": "thickasjello" } }]
+  },
+  "email": { "email": "hello@peterbsmith.com" },
+  "address 2": {
+    "rich_text": [{ "type": "text", "text": { "content": "apt 2" } }]
+  },
+  "city": {
+    "rich_text": [{ "type": "text", "text": { "content": "syracuse" } }]
+  },
+  "website": { "url": "www.peterbsmith.com" },
+  "first name": {
+    "rich_text": [{ "type": "text", "text": { "content": "Peter" } }]
+  },
+  "nickname": {
+    "rich_text": [
+      { "type": "text", "text": { "content": "Archimedes Of Web" } }
+    ]
+  },
+  "department": { "rich_text": [] },
+  "zipcode": {
+    "rich_text": [{ "type": "text", "text": { "content": "13210" } }]
+  },
+  "last name": {
+    "rich_text": [{ "type": "text", "text": { "content": "Smith" } }]
+  },
+  "state": { "rich_text": [{ "type": "text", "text": { "content": "NY" } }] },
+  "✔️ goals attempted": {
+    "relation": [
+      { "id": "66df552d-85d3-4332-8b2e-1650228f4752" },
+      { "id": "804da4b4-7dea-47dd-9192-6c3499938d11" },
+      { "id": "1d20a57b-6b08-463b-9ed1-b63aad38fabf" },
+      { "id": "36450a07-c8c4-4655-ae8a-59d701d06344" },
+      { "id": "e865a87f-e1af-4f0c-ae29-4d5bd42abc63" },
+      { "id": "bd3ec885-21e0-4648-b4b7-b4ecebeebbb3" },
+      { "id": "e07788ad-d694-4eb8-b292-0b7ed31aa879" },
+      { "id": "236cd879-cba7-442a-b76b-af4f80aeec82" },
+      { "id": "d92812e3-a674-44e6-962f-76a7ed9c4888" },
+      { "id": "b9bfba4d-7f63-47b0-9678-71d5aae32da2" },
+      { "id": "ec05f138-bff5-41b1-82e2-af5f79563c0e" },
+      { "id": "9dc8051b-ad59-4092-9bec-5864d1965acc" },
+      { "id": "59bdd789-2127-48b1-9c09-d1eadb1f38e9" },
+      { "id": "34e68b9b-5cf8-44ea-bf03-64dedfb7ca33" },
+      { "id": "c05db508-f21e-4e5b-b80b-e35519332e76" },
+      { "id": "770bc637-36f4-4e0b-94ec-a346a4d82e67" },
+      { "id": "fc6ca2ba-db16-45c7-bec2-80c0bd6a1115" },
+      { "id": "4e8558c6-3938-4b82-9ddf-ee2deeb3e2ef" },
+      { "id": "fd72e242-fefc-433d-8f2c-b6dcb6bb5444" },
+      { "id": "fc5401a6-b144-4433-af8e-2683fe7e05de" },
+      { "id": "0d354ecd-b50c-4047-b55f-b992e8f6202d" },
+      { "id": "143d70e0-e273-4ec5-a88a-bf1a800607b4" },
+      { "id": "0a05acde-2abc-426d-a74d-86bc3da8d1c0" },
+      { "id": "802c0499-26e8-4d2b-b7ac-d59b41e91b84" },
+      { "id": "4d7dc7eb-267c-49f7-8f57-e802f2d2aecc" },
+      { "id": "1adebaa5-0db6-4a6d-abae-2088c9a97f36" }
+    ]
+  },
+  "🤑 sold": { "relation": [{ "id": "45ef02e5-c14e-4262-8e77-d137b0372a82" }] },
+  "🚚 deliverables": {
+    "relation": [
+      { "id": "a259c32c-3291-4638-a2d7-b4a42895795c" },
+      { "id": "b2eedc44-6c19-48c8-9041-8a640dd9c6bb" },
+      { "id": "907fc9b1-aa23-4cd4-af61-45f6ea8e9e74" },
+      { "id": "0440d5db-d8bf-4c0d-bab1-4f6ffeba93ab" },
+      { "id": "58aa5b5d-0a43-4efb-b055-88a8804d84df" },
+      { "id": "905e2e23-4ed9-49af-9af9-57f4bd53886c" },
+      { "id": "a4249156-1526-436f-9434-1c55310bffe5" },
+      { "id": "b69d422c-b37e-49c1-9abe-4ce3577a6888" },
+      { "id": "e516b8c0-7849-4789-b82a-fcc0698d2e9b" },
+      { "id": "f0c8a6e1-e6e8-4cb3-b1a3-4f50428eeb66" },
+      { "id": "c3ef0e27-e474-47f1-8a8a-f2aa4e3cdf8e" },
+      { "id": "50587b76-8618-4523-a51e-01747efe6a88" },
+      { "id": "f92dd020-4f64-4dc8-bf8f-3214ede00069" },
+      { "id": "5245c012-8197-4639-802b-2fb61b1dc24b" },
+      { "id": "1bae35eb-5964-4f1e-9100-274afd9bbe2b" },
+      { "id": "c4e18af1-7d1c-427d-9ab0-e27c22d759a1" },
+      { "id": "c14b6b4c-af2a-4e0f-b651-c5ce6f024eda" },
+      { "id": "035091ba-5e9e-4601-b845-9d6eabbddbb4" },
+      { "id": "6938ff75-9fb7-4334-ae25-f6d793f128b6" },
+      { "id": "f11f40b8-65bc-457d-b3ae-b5ad29f9a9fa" },
+      { "id": "b8b6ae58-17b3-43cc-ae48-aeefc8ca798a" },
+      { "id": "a8e669c4-98f1-4277-98d9-045f8879ae00" },
+      { "id": "173e9c9b-5c08-4d93-9733-4a37dfbb4863" },
+      { "id": "5eb08fe7-56fe-4667-bd4e-60a53ad925a5" },
+      { "id": "e20b77f5-4f50-4fa3-beaf-27401a7570f0" }
+    ]
+  },
+  "🎭 roles": {
+    "relation": [
+      { "id": "dc5a19ad-3e8b-404c-90a3-dda7fb024372" },
+      { "id": "db4aff6c-a709-4e2f-a516-408761b0f3c5" },
+      { "id": "089a9056-2500-41f4-be1d-6cd95d2f26a4" },
+      { "id": "9b6fda39-131e-4a32-8417-2d5bc3cc6d7b" }
+    ]
+  },
+  "🔏 customer contracts": {
+    "relation": [
+      { "id": "e728c6c5-adb3-4122-bab7-c41195b78096" },
+      { "id": "48b3b334-23db-44f4-8f4a-d86a6216b168" },
+      { "id": "01c2e347-b695-45c7-ab5a-fdf947c6417a" },
+      { "id": "58441f25-93d5-4c6d-8160-ec8bd4285f7a" },
+      { "id": "28ff628f-9acb-4a29-8019-41a060168fc3" },
+      { "id": "092d53f2-9558-469d-817e-78a6b8dfbd84" },
+      { "id": "a82b8072-8858-447c-ac15-3e234e70a7a1" },
+      { "id": "c9def492-980c-454b-99f1-14d319993a50" },
+      { "id": "7bc58b1f-f5e5-4098-8d0a-152e7c6507d1" },
+      { "id": "c0b1c789-ce04-476b-b80c-51fb8ba81d1e" }
+    ]
+  },
+  "💾 sim cards": {
+    "relation": [
+      { "id": "f4a08676-6041-4970-a572-3af04c2ca043" },
+      { "id": "a9fbedc6-9f4f-4896-8d9c-30bd4dcd43c0" },
+      { "id": "d5d17d83-4753-4464-9380-88716d968db1" },
+      { "id": "5619b807-bfd5-499b-a7ab-ee7754874874" },
+      { "id": "b04a86f0-153c-4c1b-b476-d2beae28a98d" }
+    ]
+  },
+  "👔 resumes and cover letters": {
+    "relation": [
+      { "id": "da012991-420a-4b4b-a058-5c6a1bc3595d" },
+      { "id": "33958c8c-2333-4a28-a6ac-2efa23211854" }
+    ]
+  },
+  "🤪 overlays": {
+    "relation": [
+      { "id": "0d9709e0-0ef1-49aa-b338-469070707c15" },
+      { "id": "1eb3d0f8-e001-4f82-a414-b9836f036f72" },
+      { "id": "3d83ff68-49a8-4f43-8b90-9f13a079fecf" },
+      { "id": "dc4d6737-f933-47a6-9a99-3b287ed30d52" },
+      { "id": "b109d68c-46a0-4a6e-a84c-a30ca0232962" }
+    ]
+  },
+  "📰 news": { "relation": [] },
+  "📷 images": {
+    "relation": [
+      { "id": "1fcc3e39-4b38-4da7-be44-424ee11b6218" },
+      { "id": "45e3669e-b5f6-4413-bc46-d87779190ae4" },
+      { "id": "1ee3cc01-a164-4784-9fcd-1ec68bb57e53" },
+      { "id": "5108e232-4cd0-4ca4-96bc-79f7bdd79caa" },
+      { "id": "2bf2eddb-cd60-40a4-80ae-db912e6a6d8d" },
+      { "id": "5818edad-a112-4ac9-a93f-5444c58a2bdc" },
+      { "id": "ee3adc82-753b-4705-b7b0-7bb60faf3879" },
+      { "id": "502a9cfa-6ce7-4c1f-b385-b0b7f2095bee" },
+      { "id": "970f05f4-ee80-4caa-b04b-7398ec381a85" },
+      { "id": "576e5189-76a7-4be5-9c1b-e72459792e06" },
+      { "id": "098a0874-1d32-423d-81f2-ae83fe2f61f5" },
+      { "id": "5d420012-5742-45c7-9bf6-3cef041a1ca3" },
+      { "id": "26ac91ea-48bb-4a71-a3c8-31df880fd0ef" },
+      { "id": "2c3eb5d6-8833-47f1-b074-43205b0c3ba2" }
+    ]
+  },
+  "📚 courses created": { "relation": [] },
+  "🏗️ projects": {
+    "relation": [
+      { "id": "4f49eaee-0e0f-48dd-b815-f16c7b5d4746" },
+      { "id": "a5b79acc-d98c-4312-8a76-d3445ec6f021" },
+      { "id": "5d3ad4a5-4602-4d58-88d8-1eb497859cda" },
+      { "id": "eed8c61c-0fe7-4119-bcaa-ad6b33694825" },
+      { "id": "c24d7127-ae45-4037-8c98-7008982a7da9" },
+      { "id": "4dbb262e-3fdc-4ae6-90ec-d63870e22666" },
+      { "id": "6aa85c0e-53ac-4340-852c-c8a7342fb5ae" },
+      { "id": "808d1d51-6b7d-426b-a48d-801b2aee79b6" },
+      { "id": "cd6606e2-50dd-4ad2-8745-98ea100d56e0" },
+      { "id": "6693cf6b-4329-4314-b7f2-b9b2a3b6b620" },
+      { "id": "8d9c44e2-de5e-49cd-b0e9-5f58c466f3ec" },
+      { "id": "1d2b78a8-1652-4dbc-b94e-d85994fd0a74" },
+      { "id": "3ffefc0f-26d4-4b2e-8f23-670093a9a49e" },
+      { "id": "e500c2b3-5351-4481-95e3-8e1201a6461c" },
+      { "id": "acfd2372-fa24-44ac-bf2a-839e4ad1a11c" },
+      { "id": "96e6b109-3f00-45dd-9586-adf2df9ce812" },
+      { "id": "efc4f4e7-1c46-41a9-9f30-c39f56959cd2" },
+      { "id": "93656f5d-429c-4f43-a6d0-52b7d1253ef7" },
+      { "id": "9f308712-0a28-4998-958a-0cc8ccd93e78" },
+      { "id": "71708eda-d716-4199-981d-43e45ef54eb6" },
+      { "id": "48c22164-d336-449c-9d50-f091d0c4b314" },
+      { "id": "917f4588-9e7a-46d8-96e0-cb901c028e95" },
+      { "id": "7c30e407-a31a-433f-aa9e-e123cf5f1ea8" },
+      { "id": "ee3aecc3-0b01-46f6-b164-9fc3e6d4b18a" },
+      { "id": "eb03b9e8-671d-4e0c-be40-e954d8cad8bd" }
+    ]
+  },
+  "🚂 onboarding": { "relation": [] },
+  "📚 courses studied": {
+    "relation": [
+      { "id": "ff64772a-c175-46c8-976e-883517dd40d2" },
+      { "id": "9b6bc9f1-005c-4ae9-bbfb-84e4e18ee874" },
+      { "id": "107ad0e4-f5e8-4001-8df7-86fde93e0c3d" },
+      { "id": "5ce32407-bc6b-4242-90cf-8205f2fd6b5c" },
+      { "id": "f2c4c85f-e9e8-4d2b-a34e-dba44e93acb1" },
+      { "id": "3eb0eb09-f088-4fc7-8d19-a7a6ea15fe90" },
+      { "id": "1b1fc223-cd91-4b81-b85b-5c4fd4a5c216" },
+      { "id": "62e55445-c036-407d-a46f-07e4f5346f90" },
+      { "id": "18fdf491-9dbd-4948-9d75-5a9bf3303f9f" },
+      { "id": "9befac6c-21c5-4fbe-a89b-32acaa189239" }
+    ]
+  },
+  "🎟️ cards held": {
+    "relation": [
+      { "id": "bce39979-c10e-4692-9da3-6879272fc4ab" },
+      { "id": "31be516d-9403-4e08-82f8-666851e5685d" },
+      { "id": "156ecd9a-bad1-4ee8-acfe-b27f7deac237" }
+    ]
+  },
+  "🤑 purchased": { "relation": [] },
+  "🔢 sets": {
+    "relation": [
+      { "id": "9d39dbfb-9b18-4907-93bb-9aa1904d75e2" },
+      { "id": "c05d3788-d42a-4148-9683-40dc530eb81f" },
+      { "id": "24d79f41-3ba6-456f-b668-f5d8f4f89d79" },
+      { "id": "35d73f6e-972d-40d3-adc1-5d2ed07c7b18" },
+      { "id": "6809d0b8-2001-479e-b288-02ffe7884293" },
+      { "id": "d3d5c6c9-87d6-4268-9e25-3350e2e04a1d" },
+      { "id": "c7a48c31-f1b0-4641-9e48-e18dd3fed034" },
+      { "id": "593494d6-0e77-4f39-9f72-26182f1abe0c" },
+      { "id": "96b93198-faa4-4da5-8232-f16743599ba5" },
+      { "id": "5f0043ce-408c-4268-8ebd-fef1ea338e4c" },
+      { "id": "555cae00-8daf-4ec9-92f8-c7c4aeea771a" },
+      { "id": "68142bde-57f4-4c6b-aae8-b04da4446e12" },
+      { "id": "43a3e43e-fe44-4d46-9cc8-40109f37ad65" },
+      { "id": "ffc2b96b-df6b-400e-914e-5a6092975833" },
+      { "id": "8e78f859-17dc-463c-884b-fb2da6bbdc56" },
+      { "id": "f42d3f49-d322-4af2-8696-922f0b7dfd47" },
+      { "id": "2d0f9b35-1a87-44cb-9369-cc2f3e182bdd" },
+      { "id": "06696b08-3185-406c-847f-a875293a3db3" },
+      { "id": "65345515-173f-484e-ae54-939cb07b41cc" }
+    ]
+  },
+  "🏢 employers": {
+    "relation": [
+      { "id": "d3d45044-d9c5-4611-b70d-6b02c5a00f3f" },
+      { "id": "14730957-5323-4c88-b269-92a89957f2b9" },
+      { "id": "48d171ce-fed7-47ba-ad2c-e9da785c04f7" },
+      { "id": "9a5ed52d-0fd3-4322-acfc-51555c558801" }
+    ]
+  },
+  "🎟️ cards given": {
+    "relation": [
+      { "id": "b9ebb121-08b5-4866-8ec3-74a1990c0a1b" },
+      { "id": "a7fd0749-f3d7-48c6-94a3-2dd739b4e914" },
+      { "id": "31be516d-9403-4e08-82f8-666851e5685d" }
+    ]
+  },
+  "💼 job hunt tracker": {
+    "relation": [
+      { "id": "8b07b537-dd0e-4f1d-8ef6-686acdd6ea50" },
+      { "id": "417f79e9-cbcc-41dc-b255-76db64c6596e" },
+      { "id": "a71afdd3-b12b-4b2a-ad99-95ad92d00b0d" },
+      { "id": "26994cfb-c6f8-4816-a2a7-63a72a32eb50" },
+      { "id": "67d9561c-821a-4c06-94df-5e982f9da5f6" },
+      { "id": "737eea2a-19bf-4643-91d0-e65ee17a635a" },
+      { "id": "d891a60c-8039-4c99-a9a4-26552f461d6c" },
+      { "id": "336e6624-b4e6-4781-a68f-034856c93517" },
+      { "id": "764e5cdd-6f90-4d2a-89c1-372279311968" },
+      { "id": "80a52c03-6088-4090-9857-23c3b32ad8c1" },
+      { "id": "33032ec2-b05b-4ec9-a612-a9826418d32f" },
+      { "id": "1383c9df-6837-40a4-8b3f-cb75f17ee968" },
+      { "id": "1f197165-7c28-4688-aa1e-7ff4e6abc48a" },
+      { "id": "44c58cc9-902e-405e-83f6-aa2b3b8bd417" },
+      { "id": "64909264-b5f9-4942-9331-d8b82d27cf1f" },
+      { "id": "22468e3e-1d20-4d4b-af2a-f735e8866644" },
+      { "id": "b2dcae5b-dfd0-44cb-938f-8046087e7020" },
+      { "id": "ded8a011-b809-4117-9f21-54283e44cdbb" },
+      { "id": "e8ccf3b4-b144-4f8c-ab2a-c76bf2e9a501" },
+      { "id": "02b8ee61-e3a5-42fe-9d84-90fa7e55e3bd" },
+      { "id": "30f635b5-0940-4cc3-b7f6-509036444beb" },
+      { "id": "f7a2344c-b835-47c0-82be-2ee07f8a5399" },
+      { "id": "bc06d4e9-8d5e-4416-b275-1298bb83e01d" },
+      { "id": "b2ea2523-365b-4384-bc05-e113c4fc7843" },
+      { "id": "c2805307-e2e8-4b20-b4ca-de6701125419" }
+    ]
+  },
+  "📦 designs": { "relation": [] },
+  "📺 videos": {
+    "relation": [
+      { "id": "2a8a4910-0072-4209-8102-9eb5aef9c8a4" },
+      { "id": "f8e0bcd9-4063-4aa2-a4d4-f293dc5325e0" },
+      { "id": "16a5dfce-108c-47ed-92d4-df37e438f33f" },
+      { "id": "e35a6ad2-4154-4735-a776-031f6f1d1970" },
+      { "id": "c8e5abf8-29fb-4879-9220-5ee50fb631c6" },
+      { "id": "9c0d5bbd-0eac-4e40-95a9-6131acde34d3" },
+      { "id": "28a43959-96c6-4170-994b-09fffc21efdc" },
+      { "id": "eba133e1-35ce-47ef-af07-faa602d80c2c" },
+      { "id": "349d7572-cfaf-4d4b-8018-0d0f9e050312" }
+    ]
+  },
+  "📍 locations": {
+    "relation": [{ "id": "f63c0627-dc06-4fc4-9940-091d6d47d161" }]
+  },
+  "🔏 provider contracts": {
+    "relation": [
+      { "id": "3211329e-ab59-4891-8c57-2531be5bf066" },
+      { "id": "c6c208fb-8612-4cd9-81c7-a08d56db4d3c" },
+      { "id": "e728c6c5-adb3-4122-bab7-c41195b78096" },
+      { "id": "48b3b334-23db-44f4-8f4a-d86a6216b168" },
+      { "id": "fe7a9df8-be69-44a5-b275-5f100ab9afd1" },
+      { "id": "3db13d56-e69d-4a4e-b43c-fbed82acfa83" },
+      { "id": "01c2e347-b695-45c7-ab5a-fdf947c6417a" },
+      { "id": "f702363f-bea4-4760-a37a-530e97aba727" },
+      { "id": "0e8c9341-7f2a-4a84-8af4-366a6bbe4272" },
+      { "id": "c735248a-3817-4a72-b2a9-cf08cb4cd3ef" },
+      { "id": "6f79aab5-96c0-4c7b-b004-53345ce12d3b" },
+      { "id": "8a8a5985-be96-4043-be19-2ef80766117a" },
+      { "id": "50c80e95-afd6-430d-8a71-61361a3dcb7d" },
+      { "id": "86af26b2-11cb-4b70-9616-e796e235cd8b" },
+      { "id": "10d468e2-ab3e-4ced-b54e-2d66a8d9055c" },
+      { "id": "a7f058ff-7b87-41be-91f7-5468e385bc61" },
+      { "id": "58441f25-93d5-4c6d-8160-ec8bd4285f7a" },
+      { "id": "bd2fadaa-2b6d-4b75-9a41-b5ea6904ebac" },
+      { "id": "28ff628f-9acb-4a29-8019-41a060168fc3" },
+      { "id": "ef253154-5c93-4828-a75d-ac77b150cd29" },
+      { "id": "b41d5fea-4214-4609-af63-f84cf80c54ab" },
+      { "id": "644f8264-0ad7-4d07-aefd-b80d60cf8f3e" },
+      { "id": "092d53f2-9558-469d-817e-78a6b8dfbd84" },
+      { "id": "c2dab202-00ea-4063-8b37-2cee924a5abb" },
+      { "id": "8be439e7-8e90-4e7b-8c28-f6596d68ebe3" },
+      { "id": "a82b8072-8858-447c-ac15-3e234e70a7a1" },
+      { "id": "c9def492-980c-454b-99f1-14d319993a50" }
+    ]
+  },
+  "✔️ goals issued": {
+    "relation": [
+      { "id": "1adebaa5-0db6-4a6d-abae-2088c9a97f36" },
+      { "id": "c05db508-f21e-4e5b-b80b-e35519332e76" },
+      { "id": "4e8558c6-3938-4b82-9ddf-ee2deeb3e2ef" }
+    ]
+  }
+}
