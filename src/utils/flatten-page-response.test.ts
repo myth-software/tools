@@ -5,6 +5,8 @@ const emptySet = require('../mocks/pages/empty-set.mock.json');
 const emptyOverlay = require('../mocks/pages/empty-overlay.mock.json');
 const prize = require('../mocks/pages/prize.mock.json');
 const person = require('../mocks/pages/person.mock.json');
+const setPage = require('../mocks/pages/set_wildfowl-amaranth.mock.json');
+const setEntity = require('../mocks/entities/set_wildfowl-amaranth.mock.json');
 
 describe('flatten page response', () => {
   test('organizations', () => {
@@ -23,6 +25,12 @@ describe('flatten page response', () => {
     const entity = flattenPageResponse(emptySet);
 
     expect(entity).toMatchObject({});
+  });
+
+  test('sets', () => {
+    const entity = flattenPageResponse(setPage);
+
+    expect(entity).toEqual(setEntity);
   });
 
   test('empty overlay', () => {

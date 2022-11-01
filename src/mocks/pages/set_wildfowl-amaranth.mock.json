@@ -1,0 +1,124 @@
+{
+  "object": "page",
+  "id": "2b3c4d5e-6f7g-8h9i-0j1a-2b3c4d5e6f7g",
+  "created_time": "2022-10-22T03:43:00.000Z",
+  "last_edited_time": "2022-10-22T03:45:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d"
+  },
+  "cover": null,
+  "icon": {
+    "type": "emoji",
+    "emoji": "🔢"
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "1a2b3c4d-5e6f-7g8h-0z1a-2b3c4d5e6f"
+  },
+  "archived": false,
+  "properties": {
+    "🤪 overlays": {
+      "id": "%40lbQ",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d"
+        }
+      ],
+      "has_more": false
+    },
+    "✔️ goal": {
+      "id": "ApnH",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d"
+        }
+      ],
+      "has_more": false
+    },
+    "🙂 athlete": {
+      "id": "JjI%60",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "score": {
+      "id": "%5Ej%60Z",
+      "type": "number",
+      "number": 94
+    },
+    "🏋️ modifiers": {
+      "id": "bmh%5D",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "created time": {
+      "id": "eLB%40",
+      "type": "created_time",
+      "created_time": "2022-10-22T03:43:00.000Z"
+    },
+    "🤌 corrections": {
+      "id": "fBzO",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "📏 progressions": {
+      "id": "pJ%7Di",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "count": {
+      "id": "xOPw",
+      "type": "number",
+      "number": 14
+    },
+    "🤸 exercise": {
+      "id": "%7D%3BeC",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d"
+        }
+      ],
+      "has_more": false
+    },
+    "last edited time": {
+      "id": "~hP%3D",
+      "type": "last_edited_time",
+      "last_edited_time": "2022-10-22T03:45:00.000Z"
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "wildfowl-amaranth",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "wildfowl-amaranth",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/wildfowl-amaranth-2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f7g"
+}

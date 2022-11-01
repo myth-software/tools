@@ -1,0 +1,30 @@
+{
+  "_shape": {
+    "🤪 overlays": "relation",
+    "✔️ goal": "relation",
+    "🙂 athlete": "relation",
+    "score": "number",
+    "🏋️ modifiers": "relation",
+    "created time": "created_time",
+    "🤌 corrections": "relation",
+    "📏 progressions": "relation",
+    "count": "number",
+    "🤸 exercise": "relation",
+    "last edited time": "last_edited_time",
+    "name": "title"
+  },
+  "page_id": "2b3c4d5e-6f7g-8h9i-0j1a-2b3c4d5e6f7g",
+  "icon": "🔢",
+  "name": "wildfowl-amaranth",
+  "score": 94,
+  "count": 14,
+  "✔️ goal": ["1234abcd-12bc-1122-0x0x-0a1b2c3d"],
+  "🤸 exercise": ["1234abcd-12bc-1122-0x0x-0a1b2c3d"],
+  "🤪 overlays": ["1234abcd-12bc-1122-0x0x-0a1b2c3d"],
+  "🙂 athlete": null,
+  "🏋️ modifiers": null,
+  "🤌 corrections": null,
+  "📏 progressions": null,
+  "created time": "2022-10-22T03:43:00.000Z",
+  "last edited time": "2022-10-22T03:45:00.000Z"
+}
