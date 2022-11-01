@@ -15,6 +15,9 @@ yarn add @myth-software/tools
 **summary**  
 notion api responses are EXTREMELY deeply nested. tools provides simple flattening of notion responses and simple expansion of properties. beyond that, it exports a wrapper around the notion api.
 
+### watch
+<a href="https://www.youtube.com/watch?v=w3FbabgV0jg" target="_blank">![thumbnail](https://myth-software-assets.s3.us-east-2.amazonaws.com/thumbnail.jpg)</a>
+
 ## example usage
 
 **flattenPageResponse**
