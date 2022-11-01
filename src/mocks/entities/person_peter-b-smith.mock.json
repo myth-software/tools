@@ -201,11 +201,7 @@
     "ee3aecc3-0b01-46f6-b164-9fc3e6d4b18a",
     "eb03b9e8-671d-4e0c-be40-e954d8cad8bd"
   ],
-  "top score": {
-    "type": "number",
-    "number": null,
-    "function": "max"
-  },
+  "top score": null,
   "🚂 onboarding": null,
   "email": "hello@peterbsmith.com",
   "📚 courses studied": [
