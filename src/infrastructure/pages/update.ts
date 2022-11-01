@@ -4,7 +4,7 @@ import {
   UpdatePageParameters,
 } from '@notionhq/client/build/src/api-endpoints';
 
-export const pagesUpdate = async (body: UpdatePageParameters) => {
+export const update = async (body: UpdatePageParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,

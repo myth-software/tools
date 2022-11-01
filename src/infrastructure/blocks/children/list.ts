@@ -1,9 +1,7 @@
 import { Client } from '@notionhq/client';
 import { ListBlockChildrenParameters } from '@notionhq/client/build/src/api-endpoints';
 
-export const blocksChildrenList = async (
-  query: ListBlockChildrenParameters
-) => {
+export const list = async (query: ListBlockChildrenParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,

@@ -1,4 +1,4 @@
-export * from './pages-create';
-export * from './pages-properties-retrieve';
-export * from './pages-retrieve';
-export * from './pages-update';
+export * from './create';
+export * as properties from './properties';
+export * from './retrieve';
+export * from './update';

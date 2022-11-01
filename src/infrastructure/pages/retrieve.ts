@@ -4,7 +4,7 @@ import {
   PageObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 
-export const pagesRetrieve = async (query: GetPageParameters) => {
+export const retrieve = async (query: GetPageParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,

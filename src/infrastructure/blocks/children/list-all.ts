@@ -2,15 +2,16 @@ import {
   ListBlockChildrenParameters,
   ListBlockChildrenResponse,
 } from '@notionhq/client/build/src/api-endpoints';
-import { blocksChildrenList } from './blocks-children-list';
-export const blocksChildrenListAll = async (
+import { list } from './list';
+
+export const listAll = async (
   input: ListBlockChildrenParameters
 ): Promise<ListBlockChildrenResponse[]> => {
-  const response = await blocksChildrenList(input);
+  const response = await list(input);
   const responses = [response];
   if (response.has_more) {
     return responses.concat(
-      await blocksChildrenListAll({
+      await listAll({
         ...input,
         start_cursor: response.next_cursor ?? undefined,
       })

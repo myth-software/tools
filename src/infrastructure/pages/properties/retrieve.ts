@@ -1,9 +1,7 @@
 import { Client } from '@notionhq/client';
 import { GetPagePropertyParameters } from '@notionhq/client/build/src/api-endpoints';
 
-export const pagesPropertiesRetrieve = async (
-  query: GetPagePropertyParameters
-) => {
+export const retrieve = async (query: GetPagePropertyParameters) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,
