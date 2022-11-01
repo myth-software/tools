@@ -15,6 +15,7 @@ export * from './is-property.assertion';
 export * from './is-relation.assertion';
 export * from './is-rich-text.assertion';
 export * from './is-rollup-array.assertion';
+export * from './is-rollup-number.assertion';
 export * from './is-rollup-show-original.assertion';
 export * from './is-rollup.assertion';
 export * from './is-select.assertion';
