@@ -4,7 +4,7 @@ import {
 } from '@notionhq/client/build/src/api-endpoints';
 import { query } from './query';
 
-export const databasesQueryAll = async (
+export const queryAll = async (
   input: QueryDatabaseParameters
 ): Promise<QueryDatabaseResponse[]> => {
   const response = await query(input);
@@ -12,7 +12,7 @@ export const databasesQueryAll = async (
 
   if (response.has_more) {
     return responses.concat(
-      await databasesQueryAll({
+      await queryAll({
         ...input,
         start_cursor: response.next_cursor ?? undefined,
       })
