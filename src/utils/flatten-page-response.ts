@@ -1,10 +1,6 @@
 import { PROPERTY_TYPES } from 'src/enums';
 import * as assertions from '../assertions';
-import {
-  isRollupArrayGuard,
-  isRollupShowOriginalGuard,
-  isRollupShowUniqueGuard,
-} from '../guards';
+import { isRollupArrayGuard, isRollupNumberGuard } from '../guards';
 import { EntityMap, Shape } from '../interfaces';
 import { EmojiRequest, PageObjectResponse } from '../types';
 import { formatProperties } from './format-properties';
@@ -72,17 +68,18 @@ export const flattenPageResponse = <T = EntityMap>({
     if (entity.type === 'rollup') {
       assertions.assertsIsRollup(entity);
 
-      if (isRollupShowOriginalGuard(entity) && isRollupArrayGuard(entity)) {
-        assertions.assertsIsRollupShowOriginal(entity);
+      if (isRollupArrayGuard(entity)) {
         assertions.assertsIsRollupArray(entity);
         const array = entity.rollup.array;
+
         return array.length === 0 ? null : formatProperties(array[0]);
       }
 
-      if (isRollupShowUniqueGuard(entity) && isRollupArrayGuard(entity)) {
-        assertions.assertsIsRollupArray(entity);
-        const array = entity.rollup.array;
-        return array.length === 0 ? null : formatProperties(array[0]);
+      if (isRollupNumberGuard(entity)) {
+        assertions.assertsIsRollupNumber(entity);
+        const number = entity.rollup.number;
+
+        return number;
       }
 
       return entity.rollup;
