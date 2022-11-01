@@ -1,0 +1,12 @@
+{
+  "name": { "title": [{ "text": { "content": "wildfowl-amaranth" } }] },
+  "count": { "number": 14 },
+  "score": { "number": 94 },
+  "✔️ goal": { "relation": [{ "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d" }] },
+  "🤸 exercise": { "relation": [{ "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d" }] },
+  "🤪 overlays": { "relation": [{ "id": "1234abcd-12bc-1122-0x0x-0a1b2c3d" }] },
+  "🙂 athlete": { "relation": [] },
+  "🏋️ modifiers": { "relation": [] },
+  "🤌 corrections": { "relation": [] },
+  "📏 progressions": { "relation": [] }
+}
