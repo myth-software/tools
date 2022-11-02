@@ -1,8 +1,5 @@
 import { Client } from '@notionhq/client';
-import {
-  GetPageParameters,
-  PageObjectResponse,
-} from '@notionhq/client/build/src/api-endpoints';
+import { GetPageParameters, PageObjectResponse } from '../../types';
 
 export const retrieve = async (query: GetPageParameters) => {
   try {

@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { GetDatabaseParameters } from '@notionhq/client/build/src/api-endpoints';
+import { GetDatabaseParameters } from '../../types';
 
 export const retrieve = async (query: GetDatabaseParameters) => {
   try {

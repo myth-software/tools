@@ -1,7 +1,4 @@
-import {
-  QueryDatabaseParameters,
-  QueryDatabaseResponse,
-} from '@notionhq/client/build/src/api-endpoints';
+import { QueryDatabaseParameters, QueryDatabaseResponse } from '../../types';
 import { query } from './query';
 
 export const queryAll = async (

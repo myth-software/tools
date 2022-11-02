@@ -1,8 +1,5 @@
 import { Client } from '@notionhq/client';
-import {
-  UpdateDatabaseParameters,
-  UpdateDatabaseResponse,
-} from '@notionhq/client/build/src/api-endpoints';
+import { UpdateDatabaseParameters, UpdateDatabaseResponse } from '../../types';
 
 export const update = (query: UpdateDatabaseParameters) => {
   try {
