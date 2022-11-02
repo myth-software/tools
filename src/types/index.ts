@@ -1,2 +1,2 @@
-export * from '@notionhq/client/build/src/api-endpoints';
-export * from './emoji-request';
+export * from './api-endpoints';
+export * from './properties';
