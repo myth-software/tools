@@ -1,7 +1,7 @@
 import {
   ListBlockChildrenParameters,
   ListBlockChildrenResponse,
-} from '@notionhq/client/build/src/api-endpoints';
+} from '../../../types';
 import { list } from './list';
 
 export const listAll = async (

@@ -1,8 +1,5 @@
 import { Client } from '@notionhq/client';
-import {
-  PageObjectResponse,
-  UpdatePageParameters,
-} from '@notionhq/client/build/src/api-endpoints';
+import { PageObjectResponse, UpdatePageParameters } from '../../types';
 
 export const update = async (body: UpdatePageParameters) => {
   try {

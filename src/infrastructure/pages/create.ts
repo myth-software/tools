@@ -1,8 +1,5 @@
 import { Client } from '@notionhq/client';
-import {
-  CreatePageParameters,
-  PageObjectResponse,
-} from '@notionhq/client/build/src/api-endpoints';
+import { CreatePageParameters, PageObjectResponse } from '../../types';
 
 export const create = (body: CreatePageParameters) => {
   try {

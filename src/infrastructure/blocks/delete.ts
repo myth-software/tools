@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { DeleteBlockParameters } from '@notionhq/client/build/src/api-endpoints';
+import { DeleteBlockParameters } from '../../types';
 
 export const del = async (input: DeleteBlockParameters) => {
   try {

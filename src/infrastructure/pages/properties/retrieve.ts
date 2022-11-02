@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { GetPagePropertyParameters } from '@notionhq/client/build/src/api-endpoints';
+import { GetPagePropertyParameters } from '../../../types';
 
 export const retrieve = async (query: GetPagePropertyParameters) => {
   try {

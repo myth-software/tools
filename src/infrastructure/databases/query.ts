@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints';
+import { QueryDatabaseParameters } from '../../types';
 
 export const query = async (input: QueryDatabaseParameters) => {
   try {

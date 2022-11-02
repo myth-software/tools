@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { ListBlockChildrenParameters } from '@notionhq/client/build/src/api-endpoints';
+import { ListBlockChildrenParameters } from '../../../types';
 
 export const list = async (query: ListBlockChildrenParameters) => {
   try {
