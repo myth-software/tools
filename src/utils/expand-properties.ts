@@ -1,6 +1,9 @@
 import { EntityMap } from '../interfaces';
+import { Properties } from '../types';
 
-export function expandProperties<T extends EntityMap = EntityMap>(entity: T) {
+export function expandProperties<T extends EntityMap = EntityMap>(
+  entity: T
+): Properties {
   const shape = entity._shape;
   const properties = Object.keys(entity)
     .filter((key) => key !== '_shape')
@@ -130,5 +133,5 @@ export function expandProperties<T extends EntityMap = EntityMap>(entity: T) {
         }
       }
     }, {} as T);
-  return properties;
+  return properties as Properties;
 }
