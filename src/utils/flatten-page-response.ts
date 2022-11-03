@@ -1,7 +1,7 @@
 import { PROPERTY_TYPES } from 'src/enums';
 import * as assertions from '../assertions';
 import { isRollupArrayGuard, isRollupNumberGuard } from '../guards';
-import { EntityMap, Shape } from '../interfaces';
+import { Shape } from '../interfaces';
 import { EmojiRequest, PageObjectResponse } from '../types';
 import { formatProperties } from './format-properties';
 
@@ -43,7 +43,7 @@ function formatIcon(
   }
 }
 
-export const flattenPageResponse = <T = EntityMap>({
+export const flattenPageResponse = <T>({
   id: page_id,
   properties,
   icon,
