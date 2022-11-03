@@ -1,5 +1,5 @@
-import { PROPERTY_TYPES } from 'src/enums';
 import * as assertions from '../assertions';
+import { PROPERTY_TYPES } from '../enums';
 import { isRollupArrayGuard, isRollupNumberGuard } from '../guards';
 import { Shape } from '../interfaces';
 import { EmojiRequest, PageObjectResponse } from '../types';

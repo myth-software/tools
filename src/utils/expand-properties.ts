@@ -1,4 +1,4 @@
-import { assertsIsEntityMap } from 'src/assertions';
+import { assertsIsEntityMap } from '../assertions';
 import { Properties } from '../types';
 
 export function expandProperties<T>(entity: T): Properties {

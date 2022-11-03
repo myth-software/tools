@@ -1,4 +1,4 @@
-import { Sets } from 'src/mocks/sets.interface';
+import { Sets } from '../mocks/sets.interface';
 import { expandProperties } from './expand-properties';
 const personEntity = require('../mocks/entities/person_peter-b-smith.mock.json');
 const setEntity = require('../mocks/entities/set_wildfowl-amaranth.mock.json');

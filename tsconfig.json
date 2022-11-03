@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "../",
     "lib": ["es2019", "dom"],
     "declaration": true,
     "module": "CommonJS",
