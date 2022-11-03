@@ -3,6 +3,7 @@ export * from './is-created-by.assertion';
 export * from './is-created-time.assertion';
 export * from './is-date.assertion';
 export * from './is-email.assertion';
+export * from './is-entity-map.assertion';
 export * from './is-files.assertion';
 export * from './is-formula.assertion';
 export * from './is-last-edited-by.assertion';

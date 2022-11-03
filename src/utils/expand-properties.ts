@@ -1,9 +1,9 @@
-import { EntityMap } from '../interfaces';
+import { assertsIsEntityMap } from 'src/assertions';
 import { Properties } from '../types';
 
-export function expandProperties<T extends EntityMap = EntityMap>(
-  entity: T
-): Properties {
+export function expandProperties<T>(entity: T): Properties {
+  assertsIsEntityMap(entity);
+
   const shape = entity._shape;
   const properties = Object.keys(entity)
     .filter((key) => key !== '_shape')
@@ -11,8 +11,8 @@ export function expandProperties<T extends EntityMap = EntityMap>(
       key,
       type: shape![key],
     }))
-    .reduce((acc, { key, type }) => {
-      const value = entity[key] as any;
+    .reduce((acc, { key, type }: { key: string; type: string }) => {
+      const value = entity[key];
       if (value === undefined) {
         return acc;
       }
@@ -112,7 +112,9 @@ export function expandProperties<T extends EntityMap = EntityMap>(
             ...acc,
             [key]: {
               relation:
-                value === null ? [] : value.map((id: string) => ({ id })),
+                value === null
+                  ? []
+                  : (value as string[]).map((id: string) => ({ id })),
             },
           };
         }
@@ -133,5 +135,5 @@ export function expandProperties<T extends EntityMap = EntityMap>(
         }
       }
     }, {} as T);
-  return properties as Properties;
+  return properties as unknown as Properties;
 }

@@ -3,6 +3,7 @@ export * from './is-created-by.guard';
 export * from './is-created-time.guard';
 export * from './is-date.guard';
 export * from './is-email.guard';
+export * from './is-entity-map.guard';
 export * from './is-files.guard';
 export * from './is-formula.guard';
 export * from './is-last-edited-by.guard';
