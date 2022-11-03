@@ -1,4 +1,4 @@
-import { Shape } from 'src/interfaces';
+import { Shape } from '../interfaces';
 
 export interface Sets {
   _shape?: Shape;

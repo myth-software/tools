@@ -1,4 +1,4 @@
-import { Shape } from 'src/interfaces';
+import { Shape } from '../interfaces';
 import { EmojiRequest } from '../types';
 
 export const SETS: {
