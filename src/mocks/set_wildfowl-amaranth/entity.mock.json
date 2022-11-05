@@ -1,20 +1,7 @@
 {
-  "_shape": {
-    "🤪 overlays": "relation",
-    "✔️ goal": "relation",
-    "🙂 athlete": "relation",
-    "score": "number",
-    "🏋️ modifiers": "relation",
-    "created time": "created_time",
-    "🤌 corrections": "relation",
-    "📏 progressions": "relation",
-    "count": "number",
-    "🤸 exercise": "relation",
-    "last edited time": "last_edited_time",
-    "name": "title"
-  },
   "page_id": "2b3c4d5e-6f7g-8h9i-0j1a-2b3c4d5e6f7g",
   "icon": "🔢",
+  "cover": "",
   "name": "wildfowl-amaranth",
   "score": 94,
   "count": 14,

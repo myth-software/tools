@@ -12,7 +12,7 @@ export * from './is-multi-select.guard';
 export * from './is-number.guard';
 export * from './is-people.guard';
 export * from './is-phone-number.guard';
-export * from './is-property.guard';
+export * from './is-properties.guard';
 export * from './is-relation.guard';
 export * from './is-rich-text.guard';
 export * from './is-rollup-array.guard';

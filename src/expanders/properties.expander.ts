@@ -1,21 +1,24 @@
 import { assertsIsEntityMap } from '../assertions';
-import { Properties } from '../types';
+import { ExpandedProperties, ExpandPropertiesConfiguration } from '../types';
 
-export function expandProperties<T>(entity: T): Properties {
+export function expandProperties<T>(
+  entity: T,
+  config: ExpandPropertiesConfiguration
+): ExpandedProperties {
   assertsIsEntityMap(entity);
 
-  const shape = entity._shape;
-  const properties = Object.keys(entity)
-    .filter((key) => key !== '_shape')
+  const properties = config.properties;
+  const expandedProperties = Object.keys(entity)
     .map((key) => ({
       key,
-      type: shape![key],
+      type: properties[key],
     }))
     .reduce((acc, { key, type }: { key: string; type: string }) => {
       const value = entity[key];
       if (value === undefined) {
         return acc;
       }
+
       switch (type) {
         case 'title':
           return {
@@ -108,13 +111,20 @@ export function expandProperties<T>(entity: T): Properties {
           };
         }
         case 'relation': {
+          const relation = value as string[];
+          if (relation === null || relation.length === 0) {
+            return {
+              ...acc,
+              [key]: {
+                relation: [],
+              },
+            };
+          }
+
           return {
             ...acc,
             [key]: {
-              relation:
-                value === null
-                  ? []
-                  : (value as string[]).map((id: string) => ({ id })),
+              relation: relation.map((id: string) => ({ id })),
             },
           };
         }
@@ -135,5 +145,5 @@ export function expandProperties<T>(entity: T): Properties {
         }
       }
     }, {} as T);
-  return properties as unknown as Properties;
+  return expandedProperties as unknown as ExpandedProperties;
 }

@@ -9,7 +9,7 @@ import {
   TextRequest,
 } from './api-endpoints';
 
-export type Properties =
+export type ExpandedProperties =
   | Record<
       string,
       | {
@@ -257,3 +257,29 @@ export type Properties =
             }
         >
     >;
+
+export type PropertyTypes =
+  | 'number'
+  | 'formula'
+  | 'select'
+  | 'multi_select'
+  | 'status'
+  | 'relation'
+  | 'rollup'
+  | 'title'
+  | 'rich_text'
+  | 'url'
+  | 'people'
+  | 'files'
+  | 'email'
+  | 'phone_number'
+  | 'date'
+  | 'checkbox'
+  | 'created_by'
+  | 'created_time'
+  | 'last_edited_by'
+  | 'last_edited_time';
+
+export type Properties = {
+  [key: string]: PropertyTypes;
+};
