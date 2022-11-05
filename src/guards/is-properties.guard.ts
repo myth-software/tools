@@ -1,4 +1,4 @@
-export enum PROPERTY_TYPES {
+enum PROPERTY_TYPES {
   number = 'number',
   formula = 'formula',
   select = 'select',
@@ -19,4 +19,28 @@ export enum PROPERTY_TYPES {
   created_time = 'created_time',
   last_edited_by = 'last_edited_by',
   last_edited_time = 'last_edited_time',
+}
+
+export function isPropertiesGuard(value: any) {
+  if (!value) {
+    return false;
+  }
+
+  if (typeof value !== 'object') {
+    return false;
+  }
+
+  if (!value.hasOwnProperty('type')) {
+    return false;
+  }
+
+  if (!Object.values(PROPERTY_TYPES).includes(value.type)) {
+    return false;
+  }
+
+  if (!Object.keys(PROPERTY_TYPES).includes(value.type)) {
+    return false;
+  }
+
+  return true;
 }

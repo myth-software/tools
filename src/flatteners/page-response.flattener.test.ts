@@ -1,12 +1,12 @@
-import { flattenPageResponse } from './flatten-page-response';
-const flexin = require('../mocks/pages/flexin.mock.json');
-const goal = require('../mocks/pages/goal.mock.json');
-const emptySet = require('../mocks/pages/empty-set.mock.json');
-const emptyOverlay = require('../mocks/pages/empty-overlay.mock.json');
-const prize = require('../mocks/pages/prize.mock.json');
-const person = require('../mocks/pages/person_peter-b-smith.mock.json');
-const setPage = require('../mocks/pages/set_wildfowl-amaranth.mock.json');
-const setEntity = require('../mocks/entities/set_wildfowl-amaranth.mock.json');
+import { flattenPageResponse } from './page-response.flattener';
+const flexin = require('../mocks/organization_flexin/page.mock.json');
+const goal = require('../mocks/goal/page.mock.json');
+const emptySet = require('../mocks/set_empty/page.mock.json');
+const emptyOverlay = require('../mocks/overlay_empty/page.mock.json');
+const prize = require('../mocks/prize/page.mock.json');
+const person = require('../mocks/person_peter-b-smith/page.mock.json');
+const setPage = require('../mocks/set_wildfowl-amaranth/page.mock.json');
+const setEntity = require('../mocks/set_wildfowl-amaranth/entity.mock.json');
 
 describe('flatten page response', () => {
   test('organizations', () => {

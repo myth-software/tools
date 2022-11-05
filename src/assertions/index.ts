@@ -12,7 +12,7 @@ export * from './is-multi-select.assertion';
 export * from './is-number.assertion';
 export * from './is-people.assertion';
 export * from './is-phone-number.assertion';
-export * from './is-property.assertion';
+export * from './is-properties.assertion';
 export * from './is-relation.assertion';
 export * from './is-rich-text.assertion';
 export * from './is-rollup-array.assertion';

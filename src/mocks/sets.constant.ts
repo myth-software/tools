@@ -1,16 +1,17 @@
-import { Shape } from '../interfaces';
-import { EmojiRequest } from '../types';
+import { EmojiRequest, Properties } from '../types';
 
 export const SETS: {
   name: string;
   page_id: string;
+  cover: string;
   emoji: EmojiRequest;
-  shape: Shape;
+  properties: Properties;
 } = {
   name: 'sets',
   page_id: 'acdd8ff8-8f51-48f6-ba8d-83f650e1dfc9',
+  cover: '',
   emoji: '🔢',
-  shape: {
+  properties: {
     '🤪 overlays': 'relation',
     '✔️ goal': 'relation',
     '🙂 athlete': 'relation',

@@ -1,9 +1,7 @@
-import { Shape } from '../interfaces';
-
 export interface Sets {
-  _shape?: Shape;
   page_id?: string;
   icon?: string;
+  cover?: string;
   '🤪 overlays'?: string[];
   '✔️ goal'?: string[];
   '🙂 athlete'?: string[];

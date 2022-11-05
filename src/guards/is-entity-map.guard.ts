@@ -1,5 +1,5 @@
 export function isEntityMapGuard(value: any) {
-  if (!value._shape) {
+  if (!value) {
     return false;
   }
 
