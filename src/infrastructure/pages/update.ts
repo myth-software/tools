@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { flattenPageResponse } from 'tools/src/flatteners';
+import { flattenPageResponse } from '../../flatteners';
 import {
   PageObjectResponse,
   ToolsConfiguration,

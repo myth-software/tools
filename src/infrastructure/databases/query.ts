@@ -1,4 +1,4 @@
-import { flattenPageResponses } from 'tools/src/flatteners';
+import { flattenPageResponses } from '../../flatteners';
 import { QueryDatabaseParameters, ToolsConfiguration } from '../../types';
 import { queryAll } from './query-all';
 import { queryAllResults } from './query-all-results';
