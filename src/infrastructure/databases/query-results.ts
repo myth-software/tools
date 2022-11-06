@@ -1,8 +1,8 @@
 import { PageObjectResponse, QueryDatabaseParameters } from '../../types';
-import { query } from './query';
+import { queryResponse } from './query-response';
 
 export const queryResults = async (input: QueryDatabaseParameters) => {
-  const { results } = await query(input);
+  const { results } = await queryResponse(input);
 
   return results as PageObjectResponse[];
 };

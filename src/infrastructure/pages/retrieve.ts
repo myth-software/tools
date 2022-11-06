@@ -1,14 +1,22 @@
 import { Client } from '@notionhq/client';
-import { GetPageParameters, PageObjectResponse } from '../../types';
+import { flattenPageResponse } from 'tools/src/flatteners';
+import {
+  GetPageParameters,
+  PageObjectResponse,
+  ToolsConfiguration,
+} from '../../types';
 
-export const retrieve = async (query: GetPageParameters) => {
+export const retrieve = async (
+  query: GetPageParameters,
+  config?: ToolsConfiguration
+) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,
       notionVersion: '2022-02-22',
     });
-
-    return (await client.pages.retrieve(query)) as PageObjectResponse;
+    const response = (await client.pages.retrieve(query)) as PageObjectResponse;
+    return config?.flattenResponse ? flattenPageResponse(response) : response;
   } catch (e) {
     console.error(e);
     throw e;

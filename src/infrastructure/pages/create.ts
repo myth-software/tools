@@ -1,13 +1,22 @@
 import { Client } from '@notionhq/client';
-import { CreatePageParameters, PageObjectResponse } from '../../types';
+import { flattenPageResponse } from 'tools/src/flatteners';
+import {
+  CreatePageParameters,
+  PageObjectResponse,
+  ToolsConfiguration,
+} from '../../types';
 
-export const create = (body: CreatePageParameters) => {
+export const create = async (
+  body: CreatePageParameters,
+  config?: ToolsConfiguration
+) => {
   try {
     const client = new Client({
       auth: process.env.NOTION_API_KEY,
       notionVersion: '2022-02-22',
     });
-    return client.pages.create(body) as Promise<PageObjectResponse>;
+    const response = (await client.pages.create(body)) as PageObjectResponse;
+    return config?.flattenResponse ? flattenPageResponse(response) : response;
   } catch (e) {
     console.error(e);
     throw e;

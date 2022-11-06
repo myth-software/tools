@@ -9,7 +9,7 @@ export const flattenExpandedProperties = (entity: unknown) => {
   }
 
   if (entity.type === 'rollup') {
-    flatteners.flattenRollup(entity);
+    return flatteners.flattenRollup(entity);
   }
 
   if (entity.type === 'number') {

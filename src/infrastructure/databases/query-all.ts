@@ -1,10 +1,10 @@
 import { QueryDatabaseParameters, QueryDatabaseResponse } from '../../types';
-import { query } from './query';
+import { queryResponse } from './query-response';
 
 export const queryAll = async (
   input: QueryDatabaseParameters
 ): Promise<QueryDatabaseResponse[]> => {
-  const response = await query(input);
+  const response = await queryResponse(input);
   const responses = [response];
 
   if (response.has_more) {
