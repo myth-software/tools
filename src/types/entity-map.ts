@@ -1,3 +1,11 @@
+export type EntityValues =
+  | undefined
+  | string
+  | number
+  | boolean
+  | string[]
+  | null;
+
 export type EntityMap = {
-  [key: string]: undefined | string | number | boolean | string[] | null;
+  [key: string]: EntityValues;
 };

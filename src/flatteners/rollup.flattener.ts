@@ -6,7 +6,7 @@ import {
 import { isRollupArrayGuard, isRollupNumberGuard } from '../guards';
 import { flattenExpandedProperties } from './expanded-properties.flattener';
 
-export function flattenRollup(entity: unknown) {
+export function flattenRollup(entity: unknown): any {
   assertsIsRollup(entity);
 
   if (isRollupArrayGuard(entity)) {
