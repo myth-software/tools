@@ -7,6 +7,6 @@ export function assertsIsRichText(value: unknown): asserts value is {
 } {
   if (!isRichTextGuard(value)) {
     console.error(value);
-    throw new TypeError('not phone number');
+    throw new TypeError('not rich text');
   }
 }

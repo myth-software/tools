@@ -3,7 +3,7 @@ export function isRichTextGuard(value: any) {
     return true;
   }
 
-  if (!value.rich_text?.[0]?.plain_text) {
+  if (typeof value.rich_text?.[0]?.plain_text !== 'string') {
     return false;
   }
 
