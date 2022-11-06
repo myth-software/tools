@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsc -p tsconfig.json && cp -r ./src/types ./dist",
+    "build": "tsc -p tsconfig.json",
     "pretest": "rm -rf dist",
     "test": "jest"
   },
