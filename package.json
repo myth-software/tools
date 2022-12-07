@@ -1,7 +1,7 @@
 {
   "name": "@myth-software/tools",
-  "version": "0.3.3",
-  "description": "kit for software engineering",
+  "version": "0.3.4",
+  "description": "kit for notion",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
