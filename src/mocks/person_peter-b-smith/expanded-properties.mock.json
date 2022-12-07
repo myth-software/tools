@@ -1,11 +1,9 @@
 {
-  "phone number": { "phone_number": "3158980928" },
+  "phone number": { "phone_number": "555898555" },
   "notes": { "rich_text": [] },
   "name": { "title": [{ "text": { "content": "Peter B Smith" } }] },
   "address 1": {
-    "rich_text": [
-      { "type": "text", "text": { "content": "1100 cumberland ave" } }
-    ]
+    "rich_text": [{ "type": "text", "text": { "content": "123 fake st" } }]
   },
   "github": {
     "rich_text": [{ "type": "text", "text": { "content": "peterbsmyth" } }]
@@ -31,12 +29,12 @@
   "twitter": {
     "rich_text": [{ "type": "text", "text": { "content": "thickasjello" } }]
   },
-  "email": { "email": "hello@peterbsmith.com" },
+  "email": { "email": "not@myemail.com" },
   "address 2": {
-    "rich_text": [{ "type": "text", "text": { "content": "apt 2" } }]
+    "rich_text": [{ "type": "text", "text": { "content": "apt 1" } }]
   },
   "city": {
-    "rich_text": [{ "type": "text", "text": { "content": "syracuse" } }]
+    "rich_text": [{ "type": "text", "text": { "content": "chattanooga" } }]
   },
   "website": { "url": "www.peterbsmith.com" },
   "first name": {
@@ -49,12 +47,12 @@
   },
   "department": { "rich_text": [] },
   "zipcode": {
-    "rich_text": [{ "type": "text", "text": { "content": "13210" } }]
+    "rich_text": [{ "type": "text", "text": { "content": "123456" } }]
   },
   "last name": {
     "rich_text": [{ "type": "text", "text": { "content": "Smith" } }]
   },
-  "state": { "rich_text": [{ "type": "text", "text": { "content": "NY" } }] },
+  "state": { "rich_text": [{ "type": "text", "text": { "content": "TN" } }] },
   "✔️ goals attempted": {
     "relation": [
       { "id": "66df552d-85d3-4332-8b2e-1650228f4752" },

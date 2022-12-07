@@ -1,7 +1,7 @@
 {
   "page_id": "efaae730-cf5b-41e3-94f7-ad9778b798e9",
   "icon": "https://peterbsmyth.com/assets/images/image01.jpg?v=4f508b0b",
-  "state": "NY",
+  "state": "TN",
   "✔️ goals attempted": [
     "66df552d-85d3-4332-8b2e-1650228f4752",
     "804da4b4-7dea-47dd-9192-6c3499938d11",
@@ -61,7 +61,7 @@
     "5eb08fe7-56fe-4667-bd4e-60a53ad925a5",
     "e20b77f5-4f50-4fa3-beaf-27401a7570f0"
   ],
-  "zipcode": "13210",
+  "zipcode": "123456",
   "department": null,
   "nickname": "Archimedes Of Web",
   "first name": "Peter",
@@ -72,7 +72,7 @@
     "9b6fda39-131e-4a32-8417-2d5bc3cc6d7b"
   ],
   "website": "www.peterbsmith.com",
-  "city": "syracuse",
+  "city": "chattanooga",
   "🔏 customer contracts": [
     "e728c6c5-adb3-4122-bab7-c41195b78096",
     "48b3b334-23db-44f4-8f4a-d86a6216b168",
@@ -96,7 +96,7 @@
     "da012991-420a-4b4b-a058-5c6a1bc3595d",
     "33958c8c-2333-4a28-a6ac-2efa23211854"
   ],
-  "address 2": "apt 2",
+  "address 2": "apt 1",
   "🤪 overlays": [
     "0d9709e0-0ef1-49aa-b338-469070707c15",
     "1eb3d0f8-e001-4f82-a414-b9836f036f72",
@@ -151,7 +151,7 @@
   ],
   "top score": null,
   "🚂 onboarding": null,
-  "email": "hello@peterbsmith.com",
+  "email": "not@myemail.com",
   "📚 courses studied": [
     "ff64772a-c175-46c8-976e-883517dd40d2",
     "9b6bc9f1-005c-4ae9-bbfb-84e4e18ee874",
@@ -285,8 +285,8 @@
     "c05db508-f21e-4e5b-b80b-e35519332e76",
     "4e8558c6-3938-4b82-9ddf-ee2deeb3e2ef"
   ],
-  "address 1": "1100 cumberland ave",
+  "address 1": "123 fake st",
   "name": "Peter B Smith",
   "notes": null,
-  "phone number": "3158980928"
+  "phone number": "555898555"
 }

@@ -1,3 +1,5 @@
+import { PropertyTypes } from './properties';
+
 export declare type IdRequest = string | string;
 export declare type PersonUserObjectResponse = {
   type: 'person';
@@ -3631,6 +3633,7 @@ export declare type PageObjectResponse = {
     string,
     {
       id: string;
+      type: PropertyTypes;
     }
   >;
   icon:
