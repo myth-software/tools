@@ -1,0 +1,186 @@
+{
+  "object": "page",
+  "id": "bc626db5-a292-4544-9428-d7a3c851890c",
+  "created_time": "2022-11-07T18:54:00.000Z",
+  "last_edited_time": "2023-01-03T00:42:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "04b5910d-6a09-46c8-bd23-19c05ad0762c"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "edad9444-917d-4047-99a3-fa7c91f08543"
+  },
+  "cover": null,
+  "icon": {
+    "type": "emoji",
+    "emoji": "📊"
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "671260ee-023a-44b5-ab70-f81ac55b5795"
+  },
+  "archived": false,
+  "properties": {
+    "moves completed": {
+      "id": "%40BMb",
+      "type": "rollup",
+      "rollup": {
+        "type": "number",
+        "number": 0,
+        "function": "count_per_group"
+      }
+    },
+    "created time": {
+      "id": "EBJs",
+      "type": "created_time",
+      "created_time": "2022-11-07T18:54:00.000Z"
+    },
+    "😲 moves": {
+      "id": "GMbT",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "ideal count": {
+      "id": "H%5BaQ",
+      "type": "number",
+      "number": 15
+    },
+    "last edited time": {
+      "id": "QZIx",
+      "type": "last_edited_time",
+      "last_edited_time": "2023-01-03T00:42:00.000Z"
+    },
+    "slack count": {
+      "id": "SIzH",
+      "type": "number",
+      "number": 13
+    },
+    "directly responsible individual": {
+      "id": "SyfW",
+      "type": "people",
+      "people": [
+        {
+          "object": "user",
+          "id": "edad9444-917d-4047-99a3-fa7c91f08543",
+          "name": "Peter Smith",
+          "avatar_url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/caf6a43d-1676-44e3-b9a0-67a947819e9d/profiel.jpeg",
+          "type": "person",
+          "person": {
+            "email": "hello@peterbsmith.com"
+          }
+        }
+      ]
+    },
+    "content count completed": {
+      "id": "Uo%3Bh",
+      "type": "rollup",
+      "rollup": {
+        "type": "number",
+        "number": 0,
+        "function": "count_per_group"
+      }
+    },
+    "🙂 directly responsible individual": {
+      "id": "aRX%3B",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "efaae730-cf5b-41e3-94f7-ad9778b798e9"
+        }
+      ],
+      "has_more": false
+    },
+    "🤪 overlays": {
+      "id": "ccIm",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "30e509ec-0fce-4e76-9e7a-162ce22418f8"
+        },
+        {
+          "id": "b4caaed4-ae57-470c-af50-3746e75df9ac"
+        },
+        {
+          "id": "a1842a64-07b3-484e-92d3-ffc66dcf11c5"
+        },
+        {
+          "id": "20f16fc0-f262-42fd-abcd-5bededb57287"
+        },
+        {
+          "id": "6bbb68e5-c6e0-4283-8126-e09448651a0d"
+        },
+        {
+          "id": "d72b9e5a-9f66-4167-9677-b1599bf1185e"
+        },
+        {
+          "id": "e0761c75-f65e-4303-9927-8035d72b3f1e"
+        },
+        {
+          "id": "3dc844e8-26bf-4528-95fb-ad06b185f418"
+        },
+        {
+          "id": "0b42d9d7-3ddb-4cf5-a866-2dcd1a24fc51"
+        },
+        {
+          "id": "e04eaa41-b3b4-48f3-bc6e-0b9af9695c35"
+        }
+      ],
+      "has_more": false
+    },
+    "handstands uploaded": {
+      "id": "dt%7Ds",
+      "type": "rollup",
+      "rollup": {
+        "type": "number",
+        "number": 10,
+        "function": "count_values"
+      }
+    },
+    "extra count": {
+      "id": "n%3E%40l",
+      "type": "number",
+      "number": 18
+    },
+    "timeframe": {
+      "id": "qngw",
+      "type": "date",
+      "date": {
+        "start": "2022-11-07",
+        "end": "2022-11-21",
+        "time_zone": null
+      }
+    },
+    "🗓️ content calendar": {
+      "id": "yvq%3B",
+      "type": "relation",
+      "relation": [],
+      "has_more": false
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "uploading 1 handstand per day",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "uploading 1 handstand per day",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/uploading-1-handstand-per-day-bc626db5a29245449428d7a3c851890c"
+}

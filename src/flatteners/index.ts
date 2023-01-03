@@ -7,6 +7,7 @@ export * from './icon.flattener';
 export * from './multi-select.flattener';
 export * from './page-response.flattener';
 export * from './page-responses.flattener';
+export * from './people.flattener';
 export * from './relation.flattener';
 export * from './rich-text.flattener';
 export * from './rollup.flattener';

@@ -10,6 +10,7 @@ const personProperties = require('../mocks/person_peter-b-smith/properties.mock.
 const setPage = require('../mocks/set_wildfowl-amaranth/page.mock.json');
 const setEntity = require('../mocks/set_wildfowl-amaranth/entity.mock.json');
 const setProperties = require('../mocks/set_wildfowl-amaranth/properties.mock.json');
+const kpiPage = require('../mocks/kpi/page.mock.json');
 
 describe('flatten page response', () => {
   test('organizations', () => {
@@ -59,5 +60,12 @@ describe('flatten page response', () => {
 
     expect(entity).toMatchObject(personEntity);
     expect(properties).toMatchObject(personProperties);
+  });
+
+  test('kpi', () => {
+    const [entity, properties] = flattenPageResponse(kpiPage);
+
+    expect(entity).toMatchObject({});
+    expect(properties).toMatchObject({});
   });
 });

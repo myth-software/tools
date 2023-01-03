@@ -69,7 +69,7 @@ export const flattenExpandedProperties = (entity: unknown) => {
   if (entity.type === 'people') {
     assertions.assertsIsPeople(entity);
 
-    return entity.people;
+    return flatteners.flattenPeople(entity.people);
   }
 
   if (entity.type === 'files') {
