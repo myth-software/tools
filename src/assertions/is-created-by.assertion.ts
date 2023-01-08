@@ -1,7 +1,9 @@
 import { isCreatedByGuard } from '../guards';
 
 export function assertsIsCreatedBy(value: unknown): asserts value is {
-  created_by: string;
+  created_by: {
+    name: string;
+  };
 } {
   if (!isCreatedByGuard(value)) {
     console.error(value);

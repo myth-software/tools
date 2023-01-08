@@ -105,7 +105,7 @@ export const flattenExpandedProperties = (entity: unknown) => {
   if (entity.type === 'created_by') {
     assertions.assertsIsCreatedBy(entity);
 
-    return entity.created_by;
+    return entity.created_by.name;
   }
 
   if (entity.type === 'created_time') {
@@ -117,7 +117,7 @@ export const flattenExpandedProperties = (entity: unknown) => {
   if (entity.type === 'last_edited_by') {
     assertions.assertsIsLasteEditedBy(entity);
 
-    return entity.last_edited_by;
+    return entity.last_edited_by.name;
   }
 
   if (entity.type === 'last_edited_time') {

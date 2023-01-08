@@ -1,5 +1,5 @@
 export function isCreatedByGuard(value: any) {
-  if (!value?.created_by) {
+  if (!value?.created_by?.name) {
     return false;
   }
 

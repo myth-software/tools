@@ -1,7 +1,9 @@
 import { isLastEditedByGuard } from '../guards';
 
 export function assertsIsLasteEditedBy(value: unknown): asserts value is {
-  last_edited_by: string;
+  last_edited_by: {
+    name: string;
+  };
 } {
   if (!isLastEditedByGuard(value)) {
     console.error(value);
