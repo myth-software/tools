@@ -63,7 +63,7 @@ export function expandProperties<T>(
           };
         case 'files':
           return {
-            [key]: expandFiles(value),
+            [key]: expandFiles(value, key),
             ...acc,
           };
         case 'email': {

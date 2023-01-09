@@ -1,4 +1,4 @@
-export const expandFiles = (value: unknown) => {
+export const expandFiles = (value: unknown, key: string) => {
   if (typeof value === 'string') {
     return {
       files: [
@@ -6,6 +6,7 @@ export const expandFiles = (value: unknown) => {
           external: {
             url: value,
           },
+          name: key,
           type: 'external',
         },
       ],
@@ -18,6 +19,7 @@ export const expandFiles = (value: unknown) => {
         external: {
           url,
         },
+        name: key,
         type: 'external',
       })),
     };
