@@ -1,5 +1,6 @@
 import { assertsIsEntityMap } from '../assertions';
 import { ExpandedProperties, ExpandPropertiesConfiguration } from '../types';
+import { expandFiles } from './files.expander';
 
 export function expandProperties<T>(
   entity: T,
@@ -62,20 +63,7 @@ export function expandProperties<T>(
           };
         case 'files':
           return {
-            [key]: {
-              files:
-                value === null
-                  ? []
-                  : [
-                      {
-                        external: {
-                          url: value,
-                        },
-                        name: key,
-                        type: 'external',
-                      },
-                    ],
-            },
+            [key]: expandFiles(value),
             ...acc,
           };
         case 'email': {
