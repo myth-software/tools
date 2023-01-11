@@ -1,6 +1,6 @@
 {
   "name": "@myth-software/tools",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "kit for notion",
   "main": "dist/index.js",
   "scripts": {
