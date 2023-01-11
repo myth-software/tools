@@ -2,7 +2,8 @@ import { isFormulaGuard } from '../../guards';
 
 export function assertsIsFormula(value: unknown): asserts value is {
   formula: {
-    expression: unknown;
+    expression?: unknown;
+    string?: string;
   };
 } {
   if (!isFormulaGuard(value)) {
