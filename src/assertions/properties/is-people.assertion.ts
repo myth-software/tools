@@ -1,4 +1,4 @@
-import { isPeopleGuard } from '../guards';
+import { isPeopleGuard } from '../../guards';
 
 export function assertsIsPeople(value: unknown): asserts value is {
   people: {

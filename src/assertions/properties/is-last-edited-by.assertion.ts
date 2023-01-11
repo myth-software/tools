@@ -1,4 +1,4 @@
-import { isLastEditedByGuard } from '../guards';
+import { isLastEditedByGuard } from '../../guards';
 
 export function assertsIsLasteEditedBy(value: unknown): asserts value is {
   last_edited_by: {

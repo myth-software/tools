@@ -1,4 +1,4 @@
-import { isUrlGuard } from '../guards';
+import { isUrlGuard } from '../../guards';
 
 export function assertsIsUrl(value: unknown): asserts value is {
   url: string | null;

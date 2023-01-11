@@ -1,4 +1,4 @@
-import { isRollupShowOriginalGuard } from '../guards';
+import { isRollupShowOriginalGuard } from '../../guards';
 
 export function assertsIsRollupShowOriginal(value: unknown): asserts value is {
   rollup: { function: 'show_original' };

@@ -1,4 +1,4 @@
-import { isCreatedByGuard } from '../guards';
+import { isCreatedByGuard } from '../../guards';
 
 export function assertsIsCreatedBy(value: unknown): asserts value is {
   created_by: {

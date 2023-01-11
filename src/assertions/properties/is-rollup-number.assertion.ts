@@ -1,4 +1,4 @@
-import { isRollupNumberGuard } from '../guards';
+import { isRollupNumberGuard } from '../../guards';
 
 export function assertsIsRollupNumber(value: unknown): asserts value is {
   rollup: { type: 'number'; number: number | null };

@@ -1,4 +1,4 @@
-import { isStatusGuard } from '../guards';
+import { isStatusGuard } from '../../guards';
 
 export function assertsIsStatus(value: unknown): asserts value is {
   status: { name: string } | null;

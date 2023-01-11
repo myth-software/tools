@@ -1,4 +1,4 @@
-import { isEmailGuard } from '../guards';
+import { isEmailGuard } from '../../guards';
 
 export function assertsIsEmail(value: unknown): asserts value is {
   email: string;

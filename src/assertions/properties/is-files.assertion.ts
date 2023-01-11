@@ -1,4 +1,4 @@
-import { isFilesGuard } from '../guards';
+import { isFilesGuard } from '../../guards';
 
 export function assertsIsFiles(value: unknown): asserts value is {
   files: {

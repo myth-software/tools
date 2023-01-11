@@ -1,4 +1,4 @@
-import { isLastEditedTimeGuard } from '../guards';
+import { isLastEditedTimeGuard } from '../../guards';
 
 export function assertsIsLastEditedTime(value: unknown): asserts value is {
   last_edited_time: string;

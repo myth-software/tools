@@ -1,4 +1,4 @@
-import { isRollupArrayGuard } from '../guards';
+import { isRollupArrayGuard } from '../../guards';
 
 export function assertsIsRollupArray(value: unknown): asserts value is {
   rollup: { type: 'array'; array: any[] };

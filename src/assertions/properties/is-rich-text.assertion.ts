@@ -1,4 +1,4 @@
-import { isRichTextGuard } from '../guards';
+import { isRichTextGuard } from '../../guards';
 
 export function assertsIsRichText(value: unknown): asserts value is {
   rich_text: {

@@ -1,5 +1,5 @@
-import { isEntityMapGuard } from '../guards';
-import { EntityMap } from '../types';
+import { isEntityMapGuard } from '../../guards';
+import { EntityMap } from '../../types';
 
 export function assertsIsEntityMap(value: unknown): asserts value is EntityMap {
   if (!isEntityMapGuard(value)) {

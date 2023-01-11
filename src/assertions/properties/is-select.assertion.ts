@@ -1,4 +1,4 @@
-import { isSelectGuard } from '../guards';
+import { isSelectGuard } from '../../guards';
 
 export function assertsIsSelect(value: unknown): asserts value is {
   select: { name: string } | null;

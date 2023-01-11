@@ -1,4 +1,4 @@
-import { isFormulaGuard } from '../guards';
+import { isFormulaGuard } from '../../guards';
 
 export function assertsIsFormula(value: unknown): asserts value is {
   formula: {

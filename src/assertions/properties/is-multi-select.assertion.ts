@@ -1,4 +1,4 @@
-import { isMultiSelectGuard } from '../guards';
+import { isMultiSelectGuard } from '../../guards';
 
 export function assertsIsMultiSelect(
   value: unknown

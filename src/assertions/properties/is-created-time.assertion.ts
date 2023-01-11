@@ -1,4 +1,4 @@
-import { isCreatedTimeGuard } from '../guards';
+import { isCreatedTimeGuard } from '../../guards';
 
 export function assertsIsCreatedTime(value: unknown): asserts value is {
   created_time: string;

@@ -1,5 +1,5 @@
-import { isPropertiesGuard } from '../guards';
-import { Properties } from '../types';
+import { isPropertiesGuard } from '../../guards';
+import { Properties } from '../../types';
 
 export function assertsIsProperties(
   value: unknown

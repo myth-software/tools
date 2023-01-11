@@ -1,4 +1,4 @@
-import { isCheckboxGuard } from '../guards';
+import { isCheckboxGuard } from '../../guards';
 
 export function assertsIsCheckbox(value: unknown): asserts value is {
   checkbox: boolean;

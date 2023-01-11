@@ -1,4 +1,4 @@
-import { isTitleGuard } from '../guards';
+import { isTitleGuard } from '../../guards';
 
 export function assertsIsTitle(value: unknown): asserts value is {
   title: {
